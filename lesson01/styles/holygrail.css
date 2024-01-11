@@ -1,0 +1,52 @@
+.holygrail {
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 2fr auto;
+
+}
+
+.title {
+    
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+
+    background-color: pink;
+    grid-column: 1/4;
+    padding: 1rem;
+}
+
+nav {
+    background-color: aquamarine;
+    grid-column: 1/4;
+
+}
+
+main {
+    background-color: orangered;
+    grid-column: 1/3;
+    grid-row: 3/5;
+    padding: 10rem;
+
+
+}
+
+
+
+div {
+    background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 3/5;
+
+}
+
+footer {
+    background-color: blanchedalmond;
+    grid-column: 1/4;
+    grid-row: 4/4;
+    text-align: center;
+    padding: 1rem;
+}
