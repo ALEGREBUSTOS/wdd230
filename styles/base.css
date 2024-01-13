@@ -1,0 +1,40 @@
+.grid-body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:12fr;
+    justify-content: center;
+}
+
+header{
+    grid-template-rows:1/2;
+    background-color: blue;
+    padding: 30px;
+}
+
+
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    justify-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    justify-items: center;
+    padding: 30px;
+
+}   
+
+footer{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    justify-content: center;
+}   
