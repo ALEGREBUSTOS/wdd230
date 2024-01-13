@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+
 .grid-body{
     display: grid;
     grid-template-columns: auto;
@@ -6,12 +9,32 @@
 }
 
 header{
-    grid-template-rows:1/2;
-    background-color: blue;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr;
+    grid-row:1/2;
+    border-top: solid medium black;
+    border-bottom: solid medium black;
     padding: 30px;
+    justify-content: center;
 }
 
+header h1{
+    grid-row: 1;
+    grid-column: auto;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
 
+    
+}
+
+img{
+    grid-row: 2;
+    grid-column: auto;
+    width: 300px;
+    height: min-content;
+    box-shadow: 10px 5px 5px rgb(174, 174, 174);
+}
 
 nav{
     display: grid;
@@ -20,6 +43,8 @@ nav{
     justify-items: center;
     gap: 30px;
     padding: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-bottom: solid medium black;
 }
 
 main{
@@ -28,13 +53,17 @@ main{
     grid-template-rows: 4fr;
     justify-items: center;
     padding: 30px;
-
+    border-bottom: solid medium black;
+    font-family: 'IBM Plex Sans', sans-serif;
 }   
 
 footer{
-
+    border-bottom: solid medium black;
+    border-right: solid medium black;
+    border-left: solid medium black;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    justify-content: center;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
 }   
