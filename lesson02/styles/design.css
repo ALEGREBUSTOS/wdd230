@@ -1,0 +1,75 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.banner {
+	padding: 1rem;
+	background-color: #bc6c25;
+    text-align: center;
+    color: #fefae0;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1, 
+h2, 
+h3, 
+footer{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+li,
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+main {
+	display: grid;
+    grid-template-columns: 1fr 150px ;
+    gap: 25px;
+    
+}
+
+h2 {
+	color: #283618;
+	text-align: left;
+    grid-column: span 2;
+}
+
+article p {
+	text-align: justify;
+    font-weight: lighter;
+    
+}
+
+ul{
+    font-weight: bold;
+    
+    
+}
+.callout {
+	color: white;
+	background-color: #283618;
+    padding: 5px;
+    grid-column:span 2 ;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+}
