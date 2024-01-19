@@ -56,6 +56,12 @@ nav{
 nav a:hover{
     color: rgb(250, 198, 28);    
 }
+
+ul a:hover{
+
+color: black;
+
+}
 main{
     display: grid;
     grid-template-columns: 1fr;

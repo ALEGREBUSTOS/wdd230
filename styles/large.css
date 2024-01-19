@@ -1,0 +1,43 @@
+@media screen and (min-width: 500px) {
+
+    header {
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        align-items: center;
+        background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
+    }
+    img{
+        max-width: 150px;
+
+
+    }
+    header h1 {
+        justify-content: left;
+        grid-column: 2;
+        grid-row: -1;
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    main {
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 60px 1fr;
+        justify-content: center;
+    }
+
+    h2 {
+        grid-row:span 1;
+        grid-column:span 2;
+     
+       
+    }
+
+}
