@@ -1,0 +1,52 @@
+@media screen and (min-width: 500px) and (max-width: 900px){
+
+body{
+    max-width: 900px;
+    max-height: max-content;
+}    
+main{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 900px;
+    max-height: fit-content;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+.card{
+    width: fit-content;
+   
+}
+
+.card:last-child{
+    width: fit-content;
+    grid-column: span 2;
+}
+
+.card:last-child img {
+    max-width: 192px;
+    max-height: 403px;
+
+
+}
+footer{
+
+    max-width: 900px;
+    max-height: max-content;
+    justify-content: space-between;
+    
+}
+#current-year{
+
+    grid-column: 1/2;
+    text-align: center;
+}
+#lastModified{
+    font-size: larger;
+}
+.mp4{
+    width: 190px;
+    
+}
+}
+

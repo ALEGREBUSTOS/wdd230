@@ -1,0 +1,139 @@
+
+
+/*ESTRUCTURA */
+body {
+    max-width: 500px;
+    max-height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12fr;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-row: 1/2;
+    grid-column: inherit;
+    padding: 30px;
+    justify-content: center;
+    border-bottom: 0.5px solid black;
+
+}
+
+
+nav {
+    grid-row: 2/3;
+    grid-column: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+main {
+    grid-row: 3/10;
+    grid-column: inherit;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 350px;
+    box-shadow: 2px 2px 2px 2px rgb(199, 199, 201);
+    padding: 0px 10px;
+    
+}
+
+
+footer{
+    grid-column: 1/1;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 3fr;
+    align-items: center;
+    margin-top: 20px;
+    max-height: max-content;
+    background: linear-gradient(white, rgb(151, 150, 150));
+} 
+
+img{
+    max-height: 302.25px ;
+    max-width: 144px;
+    float: right;
+    padding: 10PX;
+        
+}
+
+/*COSAS DE DISEÑO*/
+nav a:hover {
+    color: rgb(250, 198, 28);
+}
+a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    color: black;
+    padding: 1px 2.5px;
+    
+
+}
+
+a:hover{
+    color: white;
+}
+
+
+a:visited {
+    text-decoration-line: none;
+}
+
+.card a{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0.5px black solid;
+    background-color: rgb(255, 0, 111);
+}
+
+h1,h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+}
+
+p{
+    font-family: 'Kanit', sans-serif;
+}
+  
+
+#current-year{
+    grid-row: 2/3;
+    grid-column: 1/1;
+    align-items: center;
+    padding-left: 10px;
+
+
+
+}
+
+#lastModified{
+    grid-row: 3/4;
+    grid-column: span 2;
+    padding: 0px;
+    justify-self: center;
+}
+
+.mp4{
+
+    width: 150px;
+    height: auto;
+    grid-row: 2/3;
+    grid-column: 2/2;
+    justify-self: right;
+}
