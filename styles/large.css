@@ -7,11 +7,13 @@
         align-items: center;
         background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
     }
-    img{
+
+    img {
         max-width: 150px;
 
 
     }
+
     header h1 {
         justify-content: left;
         grid-column: 2;
@@ -22,7 +24,13 @@
 
         display: flex;
         justify-content: center;
+        gap: 30px;
+        padding: 30px;
 
+    }
+
+    nav a:hover{
+        color: rgb(250, 198, 28);    
     }
 
     main {
@@ -34,10 +42,28 @@
     }
 
     h2 {
-        grid-row:span 1;
-        grid-column:span 2;
-     
-       
+        grid-row: span 1;
+        grid-column: span 2;
+
+
     }
+
+    /* CAMBIOS DEL HAMBURGER BOTTON */
+    /* large view navigation ************************************/
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
 
 }
