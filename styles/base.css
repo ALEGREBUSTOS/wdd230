@@ -72,7 +72,7 @@ main{
 
 .card{
     width: 250px;
-    background: linear-gradient(0.50turn, #f5f1d4, rgb(44, 109, 199));
+    background: linear-gradient(0.50turn, #dfdbc1, rgb(44, 109, 199));
     box-shadow:2px 2px 2px rgb(2, 3, 89) ;
 }
 
