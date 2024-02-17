@@ -11,7 +11,6 @@ header {
     grid-row: 1;
     grid-column: 1;
     font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
     border-bottom: black solid 10px;
     text-align: center;
 
@@ -198,7 +197,7 @@ main {
     grid-row: 2;
     grid-column: auto;
     margin: 0px;
-    padding: -10px;
+    padding-bottom: 35px;
 }
 
 .webview img {
@@ -224,7 +223,7 @@ main {
     grid-row: 2;
     grid-column: auto;
     margin: 0px;
-    padding: -10px;
+    padding-bottom: 35px;
 
 }
 
