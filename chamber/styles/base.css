@@ -212,7 +212,8 @@ main{
 .advertisement-box h1{
     grid-row: 1;
     text-align: center;
-    font-size: var(--font-Lato);
+    font-family: var(--font-Lato);
+    color: var(--color-letter1);
     font-size: larger;
 
 
@@ -229,6 +230,8 @@ main{
 
 .advertisement-1 h4{
     border-bottom: 1px solid black;
+    font-family: var(--font-Lato);
+    color: var(--color-letter2);
 }
 
 
@@ -255,6 +258,8 @@ main{
 
 .advertisement-2 h4{
     border-bottom: 1px solid black;
+    font-family: var(--font-Lato);
+    color: var(--color-letter2);
 }
 .advertisement-3{
     display: grid;
@@ -273,6 +278,8 @@ main{
 
 .advertisement-3 h4{
     border-bottom: 1px solid black;
+    font-family: var(--font-Lato);
+    color: var(--color-letter2);
 }
 
 footer{
@@ -289,11 +296,13 @@ footer{
 footer div{
     grid-row: 1;
     text-align: center;
+    font-family: var(--font-Archivo-Narrow);
 }
 .current-year{
     grid-row: 2;
     padding: 0px;
     justify-self: center;
+    font-family: var(--font-Archivo-Narrow);
 
 
 }
@@ -302,4 +311,5 @@ footer div{
     grid-row: 3;
     padding: 0px;
     justify-self: center;
+    font-family: var(--font-Archivo-Narrow);
 }
