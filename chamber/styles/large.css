@@ -6,7 +6,7 @@
     .hero-img{
         padding-left: 40px;
         grid-row: 2;
-        max-width: 1400px;
+        max-width: 100%;
         max-height: 1200px;
     
     }
