@@ -12,6 +12,7 @@ const h4Element2 = document.querySelector('.advertisement-2 h4');
 const aElement2 = document.querySelector('.advertisement-2 a');
 const h4Element3 = document.querySelector('.advertisement-3 h4');
 const aElement3 = document.querySelector('.advertisement-3 a');
+const navbarelemnts= document.querySelectorAll('.nav-bar a')
 
 
 modeButton.addEventListener("click", () => {
@@ -34,6 +35,11 @@ modeButton.addEventListener("click", () => {
         advertisementboxes[1].style.color = "#FEFAE0";
         advertisementboxes[2].style.background = "#283618";
         advertisementboxes[2].style.color = "#FEFAE0";
+        navbarelemnts.forEach(function(a) {
+            a.style.color = "#FEFAE0"; 
+            a.style.background = "#283618";
+        });
+
         h4Element1.style.color = "#FEFAE0";
         aElement1.style.color = "#FEFAE0";
         h4Element2.style.color = "#FEFAE0";
@@ -60,6 +66,10 @@ modeButton.addEventListener("click", () => {
         advertisementboxes[1].style.color = "#283618";
         advertisementboxes[2].style.background = "#FEFAE0";
         advertisementboxes[2].style.color = "#283618";
+        navbarelemnts.forEach(function(a) {
+            a.style.color = "#283618"; 
+            a.style.background = "#FEFAE0";
+        });
         h4Element1.style.color = "#283618";
         aElement1.style.color = "#283618";
         h4Element2.style.color = "#283618";

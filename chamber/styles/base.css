@@ -101,15 +101,16 @@ header h1 {
     color: var(--color-letter1);
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
 }
 
 #mode {
     position: absolute;
+    width: 15px;
+    height: 15px;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
     font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;

@@ -13,7 +13,12 @@
         padding: 0px 0px 20px 0px;
     
     }
-
+    #mode {
+        position: absolute;
+        top: 1rem;
+        left: 85rem;
+ 
+    }
     #menu {
         display: none;
         /* hide hamburger button */
@@ -26,6 +31,7 @@
     .nav-bar a {
         display: block;
         flex: 1 1 100%;
+        
     }
 
     .nav-bar a:hover{
