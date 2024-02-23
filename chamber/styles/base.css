@@ -129,7 +129,6 @@ main {
     max-width: 600px;
     max-height: 400px;
     width: 100%;
-    padding-bottom:10px ;  
 
 }
 
@@ -164,7 +163,8 @@ main {
     height: 100%;
     padding: 20px 0px 20px 0px;
     background-color: var(--color-background2);
-    align-items: center;
+    align-items: center; 
+    align-content: stretch;
 
 }
 
