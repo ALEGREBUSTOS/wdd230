@@ -6,18 +6,18 @@
     --color-background2: #FEFAE0;
     --color-letter1: #BC6C25;
     --color-letter2: #283618;
-  }
-  
+}
 
-body{
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: 6fr;
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 6fr;
 
 
 }
 
-header{
+header {
     grid-row: 1/1;
     grid-column: auto;
     background-color: var(--color-background2);
@@ -29,8 +29,8 @@ header{
 
 }
 
-header h1{
-    grid-row:1 ;
+header h1 {
+    grid-row: 1;
     grid-column: 2;
     font-family: var(--font-Montserrat);
     color: var(--color-letter1);
@@ -38,86 +38,101 @@ header h1{
 
 /* CSS FOR HAMBURGER BOTTON */
 /* small view navigation */
-#menu{
-    grid-row:1;
+#menu {
+    grid-row: 1;
     grid-column: 3;
     justify-self: center;
     align-self: center;
-	font-size: 1.5rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     font-family: var(--font-Lato);
     border: none;
     background-color: var(--color-background2);
-    color:var(--color-letter2);
+    color: var(--color-letter2);
 
 
 
 
 }
+
 #menu::before {
-	content: "☰";
-    
+    content: "☰";
+
 }
 
 #menu.open::before {
-	content: "🆇";
+    content: "🆇";
 }
-#menu:hover{
+
+#menu:hover {
     transition: 0.5s;
-    color: var(--color-letter1); 
+    color: var(--color-letter1);
 }
 
 .nav-bar {
     grid-row: 2/2;
     grid-column: 1/4;
-	display: flex;
-	flex-direction: column;
-	list-style: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     max-width: 100%;
     align-items: center;
     justify-self: center;
     font-size: 1.5rem;
     font-family: var(--font-Lato);
-    
+
 
 
 }
 
 .nav-bar a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
     background-color: var(--color-background2);
-    color:var(--color-letter2);
-  
-    
-}
-.nav-bar a:hover{
-    transition: 0.5s;
-    color: var(--color-letter1);  
-}
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
+    color: var(--color-letter2);
+
+
 }
 
-main{
-  grid-row: 2/6;
-  grid-column: auto;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows:3fr;
+.nav-bar a:hover {
+    transition: 0.5s;
+    color: var(--color-letter1);
 }
-.hero-img{
-    
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+main {
+    grid-row: 2/6;
+    grid-column: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3fr;
+}
+
+.hero-img {
+
     grid-row: 2;
     max-width: 600px;
     max-height: 400px;
     width: 100%;
 
 }
-.bttn-joinus{
+
+.bttn-joinus {
     position: absolute;
     justify-self: right;
     padding: 20px;
@@ -126,13 +141,14 @@ main{
     border: none;
 }
 
-.bttn-joinus:hover{
+.bttn-joinus:hover {
 
     background-color: var(--color-letter1);
     color: var(--color-background2);
 
 }
-.event-weather-box{
+
+.event-weather-box {
     grid-row: 3;
     grid-column: auto;
     display: flex;
@@ -140,58 +156,61 @@ main{
     align-items: center;
 }
 
-.event{
+.event {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding:20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     background-color: var(--color-background2);
     align-items: center;
 
 }
 
-.event h4{
+.event h4 {
     font-family: var(--font-Lato);
     text-align: center;
-    border-bottom:1px solid black ;
+    border-bottom: 1px solid black;
 
 }
 
-.event p{
+.event p {
     width: 80%;
     font-family: var(--font-Archivo-Narrow);
     text-align: center;
 }
-.event img{
+
+.event img {
     max-width: 60%;
     max-height: 60%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.weather{
+.weather {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding:20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     background-color: var(--color-background2);
     align-items: center;
     align-content: stretch;
 }
 
-.weather h4{
+.weather h4 {
     font-family: var(--font-Lato);
     text-align: center;
-    border-bottom:1px solid black ;
+    border-bottom: 1px solid black;
 }
-.weather p{
-    
+
+.weather p {
+
     font-family: var(--font-Archivo-Narrow);
     text-align: center;
 
 }
-.weather img{
+
+.weather img {
 
     max-width: 60%;
     max-height: 60%;
@@ -199,10 +218,10 @@ main{
 
 }
 
-.advertisement-box{
+.advertisement-box {
 
     grid-row: 4;
-    padding:20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 4fr;
@@ -211,7 +230,8 @@ main{
 
 
 }
-.advertisement-box h1{
+
+.advertisement-box h1 {
     grid-row: 1;
     text-align: center;
     font-family: var(--font-Lato);
@@ -220,50 +240,53 @@ main{
 
 
 }
-.advertisement-1{
+
+.advertisement-1 {
     display: grid;
     grid-row: 2;
     grid-column: auto;
     width: 100%;
     justify-items: center;
     align-items: center;
-    padding:20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
-.advertisement-1 h4{
+.advertisement-1 h4 {
     border-bottom: 1px solid black;
     font-family: var(--font-Lato);
     color: var(--color-letter2);
 }
 
 
-.advertisement-1 img{
+.advertisement-1 img {
 
     width: 50%;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.advertisement-2{
+.advertisement-2 {
     display: grid;
     grid-row: 3;
     grid-column: auto;
     width: 100%;
     justify-items: center;
-    padding:20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
 }
-.advertisement-2 img{
+
+.advertisement-2 img {
     width: 50%;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.advertisement-2 h4{
+.advertisement-2 h4 {
     border-bottom: 1px solid black;
     font-family: var(--font-Lato);
     color: var(--color-letter2);
 }
-.advertisement-3{
+
+.advertisement-3 {
     display: grid;
     grid-row: 4;
     grid-column: auto;
@@ -271,20 +294,20 @@ main{
     justify-items: center;
 }
 
-.advertisement-3 img{
+.advertisement-3 img {
     width: 50%;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.advertisement-3 h4{
+.advertisement-3 h4 {
     border-bottom: 1px solid black;
     font-family: var(--font-Lato);
     color: var(--color-letter2);
 }
 
-footer{
+footer {
 
     display: grid;
     grid-template-columns: auto;
@@ -294,13 +317,15 @@ footer{
     justify-content: center;
     background-color: var(--color-background1);
     color: var(--color-background2);
-}   
-footer div{
+}
+
+footer div {
     grid-row: 1;
     text-align: center;
     font-family: var(--font-Archivo-Narrow);
 }
-.current-year{
+
+.current-year {
     grid-row: 2;
     padding: 0px;
     justify-self: center;
@@ -309,7 +334,7 @@ footer div{
 
 }
 
-#lastModified{
+#lastModified {
     grid-row: 3;
     padding: 0px;
     justify-self: center;
