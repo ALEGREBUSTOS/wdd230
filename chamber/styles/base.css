@@ -114,6 +114,7 @@ main{
     grid-row: 2;
     max-width: 600px;
     max-height: 400px;
+    width: 100%;
 
 }
 .bttn-joinus{
