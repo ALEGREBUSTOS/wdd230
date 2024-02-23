@@ -224,7 +224,7 @@ main {
     grid-row: 4;
     padding: 20px 0px 20px 0px;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: 4fr;
     gap: 10px;
     background-color: var(--color-background2);
@@ -244,6 +244,11 @@ main {
 
 .advertisement-1 {
     display: grid;
+    grid-template-rows:  180px 30px 30px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: stretch;
+    justify-items: center;
     grid-row: 2;
     grid-column: auto;
     width: 100%;
@@ -252,59 +257,89 @@ main {
     padding: 20px 0px 20px 0px;
 }
 
+
+.advertisement-1 img {
+    grid-row: 1;
+    width: 30%;
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .advertisement-1 h4 {
+    grid-row: 2;
     border-bottom: 1px solid black;
     font-family: var(--font-Lato);
     color: var(--color-letter2);
 }
 
-
-.advertisement-1 img {
-
-    width: 50%;
-    justify-self: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.advertisement-1 a {
+    grid-row: 3;
+    font-family: var(--font-Archivo-Narrow);
+    text-decoration: none;
+    color: var(--color-letter2);
 }
 
 .advertisement-2 {
     display: grid;
+    grid-template-rows:  180px 30px 30px;
+    grid-template-columns: 1fr;
     grid-row: 3;
     grid-column: auto;
     width: 100%;
     justify-items: center;
+    align-items: center;
     padding: 20px 0px 20px 0px;
 }
 
 .advertisement-2 img {
-    width: 50%;
+    grid-row: 1;
+    width: 30%;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .advertisement-2 h4 {
+    grid-row: 2;
     border-bottom: 1px solid black;
     font-family: var(--font-Lato);
     color: var(--color-letter2);
 }
 
+.advertisement-2 a {
+    grid-row: 3;
+    font-family: var(--font-Archivo-Narrow);
+    text-decoration: none;
+    color: var(--color-letter2);
+}
+
 .advertisement-3 {
     display: grid;
+    grid-template-rows:  180px 30px 30px;
+    grid-template-columns: 1fr;
     grid-row: 4;
     grid-column: auto;
     width: 100%;
     justify-items: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
 }
 
 .advertisement-3 img {
-    width: 50%;
+    grid-row: 1;
+    width: 30%;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-
 .advertisement-3 h4 {
+    grid-row: 2;
     border-bottom: 1px solid black;
     font-family: var(--font-Lato);
+    color: var(--color-letter2);
+}
+.advertisement-3 a {
+    grid-row: 3;
+    font-family: var(--font-Archivo-Narrow);
+    text-decoration: none;
     color: var(--color-letter2);
 }
 

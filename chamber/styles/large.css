@@ -94,6 +94,25 @@
         align-items: center;
         align-content: stretch;
         justify-items: center;
+        padding: 0px;
+    }
+
+    .advertisement-1 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-2 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-3 img {
+
+        width: 50%;
+
     }
 
     
