@@ -6,8 +6,12 @@ const eventbox = document.querySelector(".event");
 const weatherbox = document.querySelector(".weather");
 const advertisementbox = document.querySelector(".advertisement-box");
 const advertisementboxes = document.querySelectorAll(".advertisement-box > div");
-const h4Elements = document.querySelectorAll('.advertisement-box1 h4');
-const aElements = document.querySelectorAll('.advertisement-box1 a');
+const h4Element1 = document.querySelector('.advertisement-1 h4');
+const aElement1 = document.querySelector('.advertisement-1 a');
+const h4Element2 = document.querySelector('.advertisement-2 h4');
+const aElement2 = document.querySelector('.advertisement-2 a');
+const h4Element3 = document.querySelector('.advertisement-3 h4');
+const aElement3 = document.querySelector('.advertisement-3 a');
 
 
 modeButton.addEventListener("click", () => {
@@ -30,8 +34,12 @@ modeButton.addEventListener("click", () => {
         advertisementboxes[1].style.color = "#FEFAE0";
         advertisementboxes[2].style.background = "#283618";
         advertisementboxes[2].style.color = "#FEFAE0";
-        h4Elements.style.color="#FEFAE0";
-        aElements.style.color="#FEFAE0";
+        h4Element1.style.color = "#FEFAE0";
+        aElement1.style.color = "#FEFAE0";
+        h4Element2.style.color = "#FEFAE0";
+        aElement2.style.color = "#FEFAE0";
+        h4Element3.style.color = "#FEFAE0";
+        aElement3.style.color = "#FEFAE0";
         modeButton.textContent = "☀️";
     } else {
         body.style.background = "#FEFAE0";
@@ -52,8 +60,12 @@ modeButton.addEventListener("click", () => {
         advertisementboxes[1].style.color = "#283618";
         advertisementboxes[2].style.background = "#FEFAE0";
         advertisementboxes[2].style.color = "#283618";
-        h4Elements.style.color="#283618";
-        aElements.style.color="#283618";
+        h4Element1.style.color = "#283618";
+        aElement1.style.color = "#283618";
+        h4Element2.style.color = "#283618";
+        aElement2.style.color = "#283618";
+        h4Element3.style.color = "#283618";
+        aElement3.style.color = "#283618";
         modeButton.textContent = "🌑";
     }
 });
