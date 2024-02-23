@@ -8,7 +8,14 @@ hbgButton.addEventListener('click', () => {
 
 var video = document.querySelector('.hero-img');
 
-video.addEventListener('loadedmetadata', function() {
-
-    video.play();
+video.addEventListener('error', function (event) {
+    console.error('Error during video playback:', event.message);
 });
+
+video.play()
+    .then(() => {
+        console.log('Video playback started successfully.');
+    })
+    .catch(error => {
+        console.error('Error starting video playback:', error.message);
+    });
