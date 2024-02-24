@@ -355,7 +355,10 @@ footer {
     background-color: var(--color-background1);
     color: var(--color-background2);
 }
+footer a{
 
+    color: var(--color-background2);
+}
 footer div {
     grid-row: 1;
     text-align: center;
