@@ -51,11 +51,7 @@
         color: rgb(250, 198, 28);    
     }
 
-    main {
-
  
-      
-    }
 
     .hero-img {
         grid-row: 1;
@@ -71,7 +67,13 @@
 
 
     }
-
+    #templename{
+        padding: 2px;
+        position: absolute;
+        left: 40px;
+        top: 1080px;  
+        font-size: x-large; 
+    }
     /* CAMBIOS DEL HAMBURGER BOTTON */
     /* large view navigation ************************************/
 
@@ -89,8 +91,5 @@
         flex: 1 1 100%;
     }
 
-    footer{
-
-    }
 
 }
