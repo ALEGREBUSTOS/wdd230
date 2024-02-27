@@ -1,17 +1,29 @@
 @media screen and (min-width: 500px) {
 
     header {
-        grid-template-columns: 200px 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows:1fr 30px;
-        gap: 10px;
+        gap: 0px;
         align-items: center;
         background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
     }
 
-  
+    picture{
+        justify-self: center;
+        align-self:center ;
+        width: 50%;
+        height: auto;
+    }
+    .profile-img{
+        justify-self: left;
+        width:100%;
+        height: auto;
+        
+    }
 
     header h1 {
-        justify-content: left;
+        justify-self:left;
         grid-column: 2;
         grid-row: 1;
     }
@@ -22,12 +34,17 @@
         display: flex;
         width: 100%;
         height: auto;
+        align-items: center;
+        border-bottom: 1px solid white;
+        
 
     }
 
     nav a{
-        width: min-content;
-        height: min-content;    
+        width: max-content;
+        height: max-content;
+         
+        
     }
 
     nav a:hover{
@@ -36,12 +53,18 @@
 
     main {
 
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: 60px 1fr;
-        justify-content: center;
+ 
+      
     }
 
+    .hero-img {
+        grid-row: 1;
+        grid-column: 1/3;
+        width: 100%;
+        height: auto;
+        box-shadow: 10px 5px 5px rgb(2, 3, 89);
+    
+    }
     h2 {
         grid-row: span 1;
         grid-column: span 2;
@@ -66,5 +89,8 @@
         flex: 1 1 100%;
     }
 
+    footer{
+
+    }
 
 }
