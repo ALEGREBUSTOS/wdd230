@@ -233,7 +233,7 @@ main {
 
 }
 
-.advertisement-box h1 {
+.advertisement-box h2 {
     grid-row: 1;
     text-align: center;
     font-family: var(--font-Lato);

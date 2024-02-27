@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Alejo Alegre Bustos - WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRBrzI3liQrvbE3vOzzQtXUFwhvpi1bsAGUL4uoWl9dZ3GPSqOnwwTu4hfX-ZkEMlN108dKPdubcGjeT6WQtiG6bKW_oGUWdXEskTvJcA" />
+    <meta property="og:image"
+        content="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRBrzI3liQrvbE3vOzzQtXUFwhvpi1bsAGUL4uoWl9dZ3GPSqOnwwTu4hfX-ZkEMlN108dKPdubcGjeT6WQtiG6bKW_oGUWdXEskTvJcA" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="315" />
     <meta property="og:url" content="https://alegrebustos.github.io/wdd230/" />
-    <meta property="article:modified_time" content="2024-01-20T10:45:30Z" />    
-    <meta name="description" content="This is an academic project where you can find all the activities in which I will be working during this semester">
-
+    <meta property="article:modified_time" content="2024-01-20T10:45:30Z" />
+    <meta name="description"
+        content="This is an academic project where you can find all the activities in which I will be working during this semester">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -27,23 +28,37 @@
 <body class="grid-body">
     <header>
         <h1 class="text">Alejo Alegre Bustos</h1>
-        <img src="images/profile-img.jpg" alt="profile-img">
-    </header> 
+        
+            <picture>
+                <source srcset=r'C:\Users\alejo\Escritorio\BYU\wdd230\images\profile-img-mobile-view.webp' media="max-width:400px;">
+                <source srcset=r'C:\Users\alejo\Escritorio\BYU\wdd230\images\profile-img.webp' media="max-width:960px;">
+                <img class="hero-img" src="images/profile-img-mobile-view.webp" alt="profile-img-mobile-view">
+            </picture>
+            <nav class="navigation">
+                <a class="text" href="#">HOME</a>
+                <a class="text" href="lesson03/chamber-site-plan.html">Site Plan</a>
+                <a class="text" href="chamber/index.html">chamber</a>
+                <a class="text" href="https://www.byui.edu/">BYU-Idaho</a>
+                <a class="text"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p19-p21#p19">Alma
+                    36:19-21</a>
+            </nav>
+    </header>
     <button id="menu"></button>
-    <nav class="navigation">
-        <a class="text" href="#">HOME</a>
-        <a class="text" href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a class="text" href="chamber/index.html">chamber</a>
-        <a class="text" href="https://www.byui.edu/">BYU-Idaho</a>
-        <a class="text"
-            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p19-p21#p19">Alma
-            36:19-21</a>
-    </nav>
 
     <main>
+
+        <div class="hero">
+            <picture>
+                <source srcset=r'C:\Users\alejo\Escritorio\BYU\wdd230\images\hero-small.webp' media="max-width:400px;">
+                <source srcset=r'C:\Users\alejo\Escritorio\BYU\wdd230\images\hero-large.webp' media="max-width:960px;">
+                <img class="hero-img" src="images/hero-small.webp" alt="large-hero-img">
+            </picture>
+        </div>
+
         <h2 class="text">WDD 230: Web Frontend Development</h2>
 
-        <section class="card">
+        <section class="card1">
 
             <h3 class="text">Learning Activities</h3>
 
@@ -55,16 +70,19 @@
                 <li><a class="text" href="lesson01/media-query.html"> CSS Media Queries </a></li>
                 <li><a class="text" href="lesson02/design-principles.html"> Design Principles Document </a></li>
                 <li><a class="text" href="lesson03/chamber-site-plan.html"> Chamber Site Plan </a></li>
-                <li><a class="text" href="https://codepen.io/Alegre-Bustos-/pen/PoLXeJq"> Responsive Navigation </a></li>
+                <li><a class="text" href="https://codepen.io/Alegre-Bustos-/pen/PoLXeJq"> Responsive Navigation </a>
+                </li>
                 <li><a class="text" href="https://codepen.io/Alegre-Bustos-/pen/rNRQXvr"> Pseudo-element </a></li>
-                <li><a class="text" href="https://codepen.io/Alegre-Bustos-/pen/Yzggqjy?editors=1100"> Pseudo-class Fun </a></li>
+                <li><a class="text" href="https://codepen.io/Alegre-Bustos-/pen/Yzggqjy?editors=1100"> Pseudo-class Fun
+                    </a></li>
                 <li><a class="text" href="lesson05/bom.html"> 📖 Book of Mormon - Top 10 </a></li>
                 <li><a class="text" href="lesson06/images/landscape.webp">WebP</a></li>
+                <li><a class="text" href="lesson06/responsive-images.html.html">Responsive Images:srcset</a></li>
             </ul>
 
         </section>
 
-        <section class="card">
+        <section class="card2">
 
             <h3 class="text">Information</h3>
 
