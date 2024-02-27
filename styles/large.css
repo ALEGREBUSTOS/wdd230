@@ -8,11 +8,7 @@
         background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
     }
 
-    img {
-        max-width: 150px;
-
-
-    }
+  
 
     header h1 {
         justify-content: left;
