@@ -1,0 +1,20 @@
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+    .grid-body{
+
+        justify-content: normal;
+        width: 100%;
+    }
+    .temple-name {
+        position: absolute;
+        left: 30px;
+        top: 580px;  
+        font-size: small; 
+    }
+
+    #menu {
+        position: absolute;
+        top: 20px;
+        left: 670px;
+    }    
+}

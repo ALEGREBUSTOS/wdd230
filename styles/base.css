@@ -54,8 +54,8 @@ picture{
 .temple-name{
     padding: 2px;
     position: absolute;
-    left: 25px;
-    top: 470px;
+    left: 30px;
+    top: 460px;
     width: max-content;
     height: max-content;
     background-color: rgba(252, 251, 251, 0.442);
@@ -181,7 +181,8 @@ footer{
     border: none;
     color: white;
     position: absolute;
-    top: 20px;left: 440px;
+    top: 20px;
+    left: 440px;
 
 }
 #menu::before {

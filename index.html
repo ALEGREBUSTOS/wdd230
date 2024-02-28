@@ -18,6 +18,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/medium-large.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,9 +56,10 @@
         
         <div class="hero">
             <picture>
-                <source srcset='images/hero-small.webp' media="(max-width:400px)">
-                <source srcset='images/hero-large.webp' media="(min-width:960px)">
-                <img class="hero-img" src="images/hero-small.webp" alt="large-hero-img">
+                <source srcset='lesson06/images/pple-talking-small-view.webp' media="(max-width:500px)">
+                <source srcset='lesson06/images/pple-talking-medium-view.webp' media="(min-width:500px) and (max-width:900px)">
+                <source srcset='lesson06/images/pple-talking-large-view.webp' media="(min-width:900px)">
+                <img class="hero-img" src="lesson06/images/pple-talking-small-view.webp" alt="large-hero-img">
             </picture>
         </div>
 
@@ -91,8 +94,12 @@
             <h3 class="text">Information</h3>
 
             <p class="text">Wethear</p>
-            <p class="text">35 °C</p>
-            <p class="text">sunny</p>
+            <label for="favchap">Enter your current Weather: </label>
+            <input type="text" id="favchap" placeholder="55 ℉">
+            <label for="favchap">Enter your current wind speed: </label>
+            <input type="text" id="favchap" placeholder="2.02 mph">
+            <button type="submit"></button>
+
 
         </section>
 

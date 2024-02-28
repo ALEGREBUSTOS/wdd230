@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
 
     header {
         display: grid;
@@ -70,8 +70,8 @@
     #templename{
         padding: 2px;
         position: absolute;
-        left: 40px;
-        top: 1080px;  
+        left: 20px;
+        top: 1330px;  
         font-size: x-large; 
     }
     /* CAMBIOS DEL HAMBURGER BOTTON */
