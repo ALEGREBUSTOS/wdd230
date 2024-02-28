@@ -56,10 +56,9 @@
         
         <div class="hero">
             <picture>
-                <source srcset='lesson06/images/pple-talking-small-view.webp' media="(max-width:500px)">
-                <source srcset='lesson06/images/pple-talking-medium-view.webp' media="(min-width:500px) and (max-width:900px)">
-                <source srcset='lesson06/images/pple-talking-large-view.webp' media="(min-width:900px)">
-                <img class="hero-img" src="lesson06/images/pple-talking-small-view.webp" alt="large-hero-img">
+                <source srcset='images/hero-large.webp'  media="(min-width:900px)">
+                <source srcset='images/hero-medium.webp' media="(min-width:500px) and (max-width:900px)">
+                <img class="hero-img" src="images/hero-small.webp" alt="large-hero-img" width="399" height="250">
             </picture>
         </div>
 
@@ -91,14 +90,13 @@
 
         <section class="card2">
 
-            <h3 class="text">Information</h3>
+            <h3 class="text">Wethear information 🌞</h3>
 
-            <p class="text">Wethear</p>
-            <label for="favchap">Enter your current Weather: </label>
-            <input type="text" id="favchap" placeholder="55 ℉">
-            <label for="favchap">Enter your current wind speed: </label>
-            <input type="text" id="favchap" placeholder="2.02 mph">
-            <button type="submit"></button>
+            <label  class="text" for="favchap">Enter your current Weather in ℉: </label>
+            <input type="text" id="weather" placeholder="55">
+            <label class="text" for="favchap">Enter your current wind speed in mph: </label>
+            <input type="text" id="windspeed" placeholder="2.02">
+            <button id = 'calculate' type="submit">calculate</button>
 
 
         </section>
@@ -117,6 +115,7 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-botton.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

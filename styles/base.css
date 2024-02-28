@@ -129,12 +129,18 @@ main h2{
 }
 
 .card2{
+    display:grid;
     grid-row: 3;
     grid-column: 2;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
     width: 100%;
     height: auto;
     background:  #052054;
     box-shadow:2px 2px 2px rgb(2, 3, 89) ;
+    font-size: smaller;
 }
 
 footer{
