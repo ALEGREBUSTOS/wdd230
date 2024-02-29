@@ -8,6 +8,22 @@
         height: auto;
     
     }
-    
+    .advertisement-1 img {
+
+        width: 100%;
+
+    }
+
+    .advertisement-2 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-3 img {
+
+        width: 50%;
+
+    }
 
 }
