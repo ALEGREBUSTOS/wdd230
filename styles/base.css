@@ -58,7 +58,7 @@ picture{
     top: 460px;
     width: max-content;
     height: max-content;
-    background-color: rgba(252, 251, 251, 0.442);
+    background-color: transparent;
     border-radius: 15px ;
     border: 2px solid white;
     color: white;
