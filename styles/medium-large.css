@@ -8,13 +8,74 @@
     .temple-name {
         position: absolute;
         left: 30px;
-        top: 580px;  
+        top: 540px;  
         font-size: small; 
     }
 
     #menu {
         position: absolute;
         top: 20px;
-        left: 670px;
+        left: 735px;
     }    
+
+    main {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr ;
+        grid-template-rows: 1fr 50px 1fr 50px;
+    }
+
+
+    .hero{
+
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .card1{
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .card2{
+        grid-row: 3;
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+
+    }
+    .card2 h3 {
+
+        grid-row: 1;
+        grid-column: 1/3;
+    
+    }
+    .map-wtr-info{
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+
+    }
+
+    .windchill-box {
+
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+        gap: 25px;
+    }
+    .card2 #visits {
+
+        grid-row: 3;
+        grid-column: 1/3;
+  
+    }
+
+    .windchill-box{
+        display: flex;
+        flex-direction: column;
+
+    }
 }

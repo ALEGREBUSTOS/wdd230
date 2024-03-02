@@ -17,7 +17,7 @@ fetch(apiUrl)
             degrees.style.color='orange'
         }else{
 
-            degrees.style.color='green'
+            degrees.style.color='lightgreen'
 
             
         }
