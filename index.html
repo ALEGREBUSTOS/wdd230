@@ -53,10 +53,10 @@
                 Buenos Aires, Argentina - Temple
             </h4>
         </div>
-        
+
         <div class="hero">
             <picture>
-                <source srcset='images/hero-large.webp'  media="(min-width:900px)">
+                <source srcset='images/hero-large.webp' media="(min-width:900px)">
                 <source srcset='images/hero-medium.webp' media="(min-width:500px) and (max-width:900px)">
                 <img class="hero-img" src="images/hero-small.webp" alt="large-hero-img" width="399" height="250">
             </picture>
@@ -93,15 +93,29 @@
 
         <section class="card2">
 
-            <h3 class="text">Wethear information 🌞</h3>
+            <h3 class="text">Information</h3>
 
-            <label  class="text" for="weather">Enter your current Weather in ℉: </label>
-            <input type="text" id="weather" placeholder="55">
-            <label class="text" for="windspeed">Enter your current wind speed in mph: </label>
-            <input type="text" id="windspeed" placeholder="2.02">
-            <button id = 'calculate' type="submit">calculate</button>
-
-
+            <div class="map-wtr-info">
+                <div class="ctn-weather">
+                    <h3 class="text">Weather 🌞</h3>
+                    <p class="text" id="city"></p>
+                    <p class="text" id="degrees"></p>
+                    <p class="text" id="description"></p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64650.5310156543!2d-60.722635506439694!3d-31.612624898264556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a985fb4a3eb9%3A0x29722882799eb403!2sSuspended%20Bridge%20Eng.%20Marcial%20Candioti!5e0!3m2!1sen!2sus!4v1709330523325!5m2!1sen!2sus"
+                    width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="windchill-box">
+                <h3 class="text">Wethear calculator</h3>
+                <label class="text" for="weather">Enter your current Weather in ℉: </label>
+                <input type="text" id="weather" placeholder="55">
+                <label class="text" for="windspeed">Enter your current wind speed in mph: </label>
+                <input type="text" id="windspeed" placeholder="2.02">
+                <button id='calculate' type="submit">calculate</button>
+            </div>
+            <h3 class="text" id="visits"></h3>
         </section>
 
     </main>
@@ -119,6 +133,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-botton.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentweather.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 
 </html>

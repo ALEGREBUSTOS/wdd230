@@ -3,7 +3,7 @@ const button = document.querySelector('#calculate');
 button.addEventListener('click', function () {
     const temperature = document.querySelector("#weather").value;
     const windspeed = document.querySelector('#windspeed').value;
-    const card = document.querySelector(".card2")
+    const windchillbox = document.querySelector(".windchill-box")
     function calculateWindChill(temperature, windSpeed) {
 
         if (temperature < 50 && windSpeed > 3.0) {
@@ -22,11 +22,13 @@ button.addEventListener('click', function () {
         newParagraph.classList.add('newp');
         newParagraph.textContent = calculateWindChill(temperature, windspeed);
         newParagraph.style.color = 'white';
-        card.append(newParagraph);
+        windchillbox.append(newParagraph);
     } else {
-        existingParagraph.textContent = calculateWindChill(temperature, windspeed);
+        existingParagraph.textContent = `${calculateWindChill(temperature, windspeed)} ℃`;
     }
 
 });
+
+
 
 

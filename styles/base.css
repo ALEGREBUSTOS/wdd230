@@ -1,27 +1,27 @@
-
-.grid-body{
+.grid-body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows:12fr;
+    grid-template-rows: 12fr;
     justify-content: normal;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 2fr;
-    grid-row:1/2;
+    grid-row: 1/2;
     border-top: solid medium white;
     border-bottom: solid medium white;
     padding: 10px;
     justify-content: center;
     background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
-    
+
 }
-.text{
+
+.text {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
@@ -30,44 +30,47 @@ header{
 
 
 }
-header h1{
+
+header h1 {
     grid-row: auto;
     grid-column: 2;
     justify-self: center;
     align-self: center;
-  
+
 }
 
-picture{
+picture {
     grid-row: 1/2;
     grid-column: 1;
     width: 100%;
     height: auto;
 }
-.profile-img{
+
+.profile-img {
 
     width: 75%;
     height: auto;
 
 }
 
-.temple-name{
+.temple-name {
     padding: 2px;
     position: absolute;
     left: 30px;
-    top: 460px;
+    top: 440px;
     width: max-content;
     height: max-content;
     background-color: transparent;
-    border-radius: 15px ;
+    border-radius: 15px;
     border: 2px solid white;
     color: white;
-    font-size:xx-small ;
+    font-size: xx-small;
 
 
-    
+
 }
-nav{
+
+nav {
     grid-row: 2;
     grid-column: 1/3;
     display: grid;
@@ -78,19 +81,20 @@ nav{
     padding: 30px; */
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: rgb(5, 32, 84);
-    
+
 }
 
 
-ul a:hover{
+ul a:hover {
 
     color: rgb(250, 198, 28);
 
 }
-main{
+
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr 50px 0.3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 50px 0.3fr 0.3fr;
     justify-items: center;
     padding: 10px;
     border-bottom: solid medium white;
@@ -98,18 +102,19 @@ main{
     gap: 10px;
 }
 
-main h2{
+main h2 {
     grid-row: 2;
     grid-column: 1/3;
     align-self: center;
 }
 
-.hero{
+.hero {
     grid-row: 1/2;
     grid-column: 1/3;
     width: 100%;
     height: auto;
 }
+
 .hero-img {
     grid-row: 1;
     grid-column: 1/3;
@@ -119,40 +124,108 @@ main h2{
     align-self: center;
     justify-self: center;
 }
-.card1{
+
+.card1 {
     grid-row: 3;
     grid-column: 1;
     width: 100%;
     height: auto;
-    background:  #052054;
-    box-shadow:2px 2px 2px rgb(2, 3, 89) ;
+    background: #052054;
+    box-shadow: 2px 2px 2px rgb(2, 3, 89);
+    text-align: center;
 }
 
-.card2{
-    display:grid;
-    grid-row: 3;
-    grid-column: 2;
+.card1 ul {
+
+    list-style-type: none;
+}
+
+.card2 {
+    display: grid;
+    grid-template-rows: 50px 1fr 0.5fr 50px;
+    grid-template-columns: 1fr;
+    grid-row: 4;
+    grid-column: 1;
     justify-items: center;
     justify-content: space-around;
     align-items: center;
-    gap: 0px;
+    gap: 5px;
     width: 100%;
     height: auto;
-    background:  #052054;
-    box-shadow:2px 2px 2px rgb(2, 3, 89) ;
+    background: #052054;
+    box-shadow: 2px 2px 2px rgb(2, 3, 89);
     font-size: smaller;
 }
 
-footer{
+.card2 h3 {
+
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+.map-wtr-info {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: auto;
+    width: 100%;
+    height: auto;
+    grid-row: 2;
+    grid-column: 1;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card2 iframe {
+    width: 100%;
+    height: 100%;
+    grid-column: auto;
+    grid-row: 2;
+}
+
+.ctn-weather {
+    width: max-content;
+    height: max-content;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.windchill-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    grid-row: 3;
+    grid-column: 1;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card2 #visits {
+
+    grid-row: 4;
+    grid-column: 1/3;
+    text-align: center;
+    width: 99%;
+    height: auto;
+    border: 1px solid white;
+}
+
+footer {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr;
     background-color: rgb(22, 98, 205);
     align-items: center;
-}   
+}
 
-.current-year{
+.current-year {
     grid-row: 1;
     grid-column: 1;
     width: 50%;
@@ -162,7 +235,7 @@ footer{
 
 }
 
-#lastModified{
+#lastModified {
     grid-row: 2;
     grid-column: 1/4;
     width: 100%;
@@ -171,7 +244,7 @@ footer{
     text-align: center;
 }
 
-.mp4{
+.mp4 {
 
     width: 150px;
     height: auto;
@@ -179,11 +252,12 @@ footer{
     grid-column: 2/2;
     justify-self: center;
 }
+
 /* CSS FOR HAMBURGER BOTTON */
 /* small view navigation */
-#menu{
+#menu {
     background-color: rgb(5, 32, 84);
-	font-size: 1.5rem;
+    font-size: 1.5rem;
     border: none;
     color: white;
     position: absolute;
@@ -191,37 +265,38 @@ footer{
     left: 440px;
 
 }
+
 #menu::before {
-	content: "☰";
-    
+    content: "☰";
+
 }
 
 #menu.open::before {
-	content: "🆇";
+    content: "🆇";
 }
-#menu:hover{
+
+#menu:hover {
     color: rgb(250, 198, 28);
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
 .navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
-.navigation a:hover{
-    color: rgb(250, 198, 28);    
+
+.navigation a:hover {
+    color: rgb(250, 198, 28);
 }
 
 .open a {
-	display: block;
+    display: block;
 }
-
-
