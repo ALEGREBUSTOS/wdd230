@@ -77,8 +77,6 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: 5fr;
     justify-items: center;
-    /* gap: 30px;
-    padding: 30px; */
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: rgb(5, 32, 84);
 
