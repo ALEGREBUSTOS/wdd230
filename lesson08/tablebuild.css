@@ -1,0 +1,55 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    font-family: "EB Garamond", Arial, serif;
+}
+
+th {
+
+    justify-self: center;
+    background-color: black;
+    color: white;
+
+}
+.tabletitle{
+
+    padding: 7px 15px;
+}
+.trow {
+
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+
+}
+
+caption {
+    caption-side: bottom;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(200, 200, 200);
+}
+
+.subtitle {
+
+    padding: 7px 15px;
+    background-color: rgb(77, 77, 77);
+    
+
+}
+
+
+td {
+    padding: 7px 15px;
+    border: 1px solid gray;
+}
+
+
+
+td {
+    border-left: 1px solid gray;
+
+}
+
