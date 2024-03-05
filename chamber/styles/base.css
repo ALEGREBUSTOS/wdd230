@@ -403,3 +403,127 @@ footer div {
     justify-self: center;
     font-family: var(--font-Archivo-Narrow);
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* CSS FOR DISCOVER PAGE */
+
+.discover-main {
+    grid-row: 2/6;
+    grid-column: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    background-color: var(--color-background2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+.nextevents {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 15px 7px 15px;
+}
+
+.statistics {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-items: right;
+    align-items: center;
+    padding: 7px 15px 7px 15px;
+}
+
+.benefits {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-items: center;
+    align-items: center;
+    padding: 7px 15px 0px 15px;
+}
+
+.testimonial{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.mercado {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+
+}
+
+.peatonal {
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+
+}
+
+.puerto {
+    width: 100%;
+    height: 100%;
+    grid-row: 3/4;
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+
+}
+.puerto picture img{
+
+    box-shadow: 2px 2px 2px rgb(89, 45, 2);
+    justify-items: center;
+    align-items: center;
+}
+
+.peatonal picture img{
+
+    box-shadow: 2px 2px 2px rgb(89, 45, 2);
+    justify-items: center;
+    align-items: center;
+}
+
+.mercado picture img{
+
+    box-shadow: 2px 2px 2px rgb(89, 45, 2);
+    justify-items: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: var(--font-Lato);
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+
+p {
+    width: 100%;
+    font-family: var(--font-Archivo-Narrow);
+    text-align: center;
+}

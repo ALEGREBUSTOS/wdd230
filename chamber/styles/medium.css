@@ -26,4 +26,9 @@
 
     }
 
+    #menu {
+        position:absolute;
+        left: 62rem;
+    
+    }
 }
