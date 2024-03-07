@@ -1,3 +1,10 @@
+:root {
+    --color1: #052054;
+    --color2: #ffdf00;
+    --color3: white;
+}
+
+
 .grid-body {
     display: grid;
     grid-template-columns: auto;
@@ -13,8 +20,8 @@ header {
     grid-template-columns: 200px 1fr;
     grid-template-rows: 2fr;
     grid-row: 1/2;
-    border-top: solid medium white;
-    border-bottom: solid medium white;
+    border-top: solid medium var(--color3);
+    border-bottom: solid medium var(--color3);
     padding: 10px;
     justify-content: center;
     background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
@@ -24,7 +31,7 @@ header {
 .text {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
-    color: white;
+    color: var(--color3);
     text-decoration: none;
 
 
@@ -62,8 +69,8 @@ picture {
     height: max-content;
     background-color: transparent;
     border-radius: 15px;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--color3);
+    color: var(--color3);
     font-size: xx-small;
 
 
@@ -78,14 +85,14 @@ nav {
     grid-template-rows: 5fr;
     justify-items: center;
     font-family: 'IBM Plex Sans', sans-serif;
-    background-color: rgb(5, 32, 84);
+    background-color: var(--color1);
 
 }
 
 
 ul a:hover {
 
-    color: rgb(250, 198, 28);
+    color: var(--color2);
 
 }
 
@@ -97,8 +104,8 @@ main {
     grid-template-rows: 0.4fr 50px 0.3fr 0.3fr;
     justify-items: center;
     padding: 10px;
-    border-bottom: solid medium white;
-    background-color: white;
+    border-bottom: solid medium var(--color3);
+    background-color: var(--color3);
     gap: 10px;
 }
 
@@ -121,7 +128,7 @@ main h2 {
     gap: 5px;
     width: 96%;
     height: 96%;
-    background: #052054;
+    background: var(--color1);
     box-shadow: 2px 2px 2px rgb(2, 3, 89);
     font-size: smaller;
 }
@@ -130,7 +137,7 @@ main h2 {
 
     grid-row: 1;
     grid-column: 1;
-    border-bottom: white solid 1px;
+    border-bottom: var(--color3) solid 1px;
     margin: 0px;
 
 }
@@ -187,7 +194,7 @@ main h2 {
     padding-top: 9px;
     width: 100%;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid var(--color3);
 }
 
 footer {
@@ -232,10 +239,10 @@ footer {
 /* CSS FOR HAMBURGER BOTTON */
 /* small view navigation */
 #menu {
-    background-color: rgb(5, 32, 84);
+    background-color: var(--color1);
     font-size: 1.5rem;
     border: none;
-    color: white;
+    color: var(--color3);
     position: absolute;
     top: 20px;
     left: 440px;
@@ -252,7 +259,7 @@ footer {
 }
 
 #menu:hover {
-    color: rgb(250, 198, 28);
+    color: var(--color2);
 }
 
 .navigation {
@@ -266,11 +273,11 @@ footer {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--color3);
 }
 
 .navigation a:hover {
-    color: rgb(250, 198, 28);
+    color: var(--color2);
 }
 
 .open a {
@@ -285,7 +292,7 @@ footer {
     grid-column: 1;
     width: 100%;
     height: auto;
-    background: #052054;
+    background: var(--color1);
     box-shadow: 2px 2px 2px rgb(2, 3, 89);
     justify-self: center;
 
@@ -309,7 +316,7 @@ fieldset {
 
 .wf1 legend {
 
-    color: yellow;
+    color: var(--color2);
     padding: .5rem;
 
 }
@@ -319,7 +326,7 @@ fieldset {
 
     display: block;
     padding-top: 1rem;
-    color: white;
+    color: var(--color3);
     font-size: .9rem;
 
 }
@@ -358,7 +365,7 @@ fieldset {
 .wf1 input[type="submit"] {
     justify-self: center;
     border: none;
-    background: linear-gradient(to right, rgb(144, 203, 239), white, yellow, white, rgb(144, 203, 239));
+    background: linear-gradient(to right, rgb(144, 203, 239), var(--color3),  var(--color2), var(--color3), rgb(144, 203, 239));
     color: black;
     border: 6px;
     border-radius: 6px;
@@ -396,7 +403,7 @@ fieldset {
         grid-template-rows: 1fr 30px;
         gap: 0px;
         align-items: center;
-        background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
+        background: linear-gradient(rgb(44, 109, 199), var(--color1));
     }
 
     picture {
@@ -426,7 +433,7 @@ fieldset {
         width: 100%;
         height: auto;
         align-items: center;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--color3);
 
 
     }
@@ -439,7 +446,7 @@ fieldset {
     }
 
     nav a:hover {
-        color: rgb(250, 198, 28);
+        color: var(--color2);
     }
 
     #menu {
