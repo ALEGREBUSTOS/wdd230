@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejo Alegre Bustos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Alejo Alegre Bustos - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image"
+        content="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRBrzI3liQrvbE3vOzzQtXUFwhvpi1bsAGUL4uoWl9dZ3GPSqOnwwTu4hfX-ZkEMlN108dKPdubcGjeT6WQtiG6bKW_oGUWdXEskTvJcA" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="https://alegrebustos.github.io/wdd230/" />
+    <meta property="article:modified_time" content="2024-01-20T10:45:30Z" />
+    <meta name="description"
+        content="This is an academic project where you can find all the activities in which I will be working during this semester">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com 'unsafe-inline'">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/medium-large.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <title>Alejo Alegre Bustos - WDD 230 - Web Frontend Development</title>
+</head>
+
+<body class="grid-body">
+    <header>
+        <h1 class="text">Alejo Alegre Bustos</h1>
+        <picture>
+            <source srcset='images/profile-img-mobile-view.webp' media="(max-width:500px)">
+            <source srcset='images/profile-img.webp' media="(min-width:960px)">
+            <img class="profile-img" src="images/profile-img-mobile-view.webp" alt="profile-img-mobile-view" width="150"
+                height="190">
+        </picture>
+        <nav class="navigation">
+            <a class="text" href="#">HOME</a>
+            <a class="text" href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a class="text" href="chamber/index.html">chamber</a>
+            <a class="text" href="https://www.byui.edu/">BYU-Idaho</a>
+            <a class="text"
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p19-p21#p19">Alma
+                36:19-21</a>
+        </nav>
+    </header>
+    <button id="menu"></button>
+
+    <body>
+        <form action="" method="get" class="wf1">
+
+            <fieldset>
+                <legend>New user</legend>
+                <label>First name*<input id="fname" type="text" name="fname" required></label>
+                <label>Last name*<input id="lname" type="text" name="lname" required></label>
+                <label>User name*<input id="uname" type="text" name="uname" required></label>
+                <label>Password*<input id="password" type="text" name="password" pattern="[a-zA-Z -]{6,}" required></label>
+                <label>Password confirmation*<input id="passwordconfirm" type="text" name="passwordconf" pattern="[a-zA-Z -]{6,}" required></label>
+                <p id="messagepssw"></p>
+                <label>Email*<input id="email" type="email" name="email" placeholder="someone@mail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <p id="messageemail"></p>
+                <label>Page rating<input type="number" name="pagerate"></label>
+            </fieldset>
+
+            <input id="btnsubmit" type="submit" value="Create my account">
+
+        </form>
+
+        <section class="card2">
+
+            <h3 class="text">Information</h3>
+
+            <div class="map-wtr-info">
+                <div class="ctn-weather">
+                    <h3 class="text">Weather🌞</h3>
+                    <p class="text" id="city"></p>
+                    <p class="text" id="degrees"></p>
+                    <p class="text" id="description"></p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108717.91189740736!2d-60.74498751476042!3d-31.621945014190487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe%2C%20Santa%20Fe%20Province%2C%20Argentina!5e0!3m2!1sen!2sus!4v1709358055080!5m2!1sen!2sus"
+                    width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="windchill-box">
+                <h3 class="text">Wethear calculator</h3>
+                <label class="text" for="weather">Enter your current Weather in ℉: </label>
+                <input type="text" id="weather" placeholder="55">
+                <label class="text" for="windspeed">Enter your current wind speed in mph: </label>
+                <input type="text" id="windspeed" placeholder="2.02">
+                <button id='calculate' type="submit">calculate</button>
+            </div>
+            <h3 class="text" id="visits"></h3>
+        </section>
+
+
+
+        </main>
+
+        <footer>
+            <p class="text" id="current-year"> asd</p>
+            <video controls autoplay muted loop class="mp4" src="images/bandera.mp4">Tu navegador no admite la
+                reproducción
+                de videos.</video>
+            <p class="text" id="lastModified">asdasda</p>
+        </footer>
+
+
+
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburger-botton.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/currentweather.js"></script>
+        <script src="scripts/visits.js"></script>
+        <script src="scripts/formscripts.js"></script>
+
+    </body>
+
+</html>

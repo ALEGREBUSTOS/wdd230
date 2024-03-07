@@ -1,0 +1,524 @@
+.grid-body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 12fr;
+    justify-content: normal;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 2fr;
+    grid-row: 1/2;
+    border-top: solid medium white;
+    border-bottom: solid medium white;
+    padding: 10px;
+    justify-content: center;
+    background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
+
+}
+
+.text {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+
+
+
+}
+
+header h1 {
+    grid-row: auto;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+
+}
+
+picture {
+    grid-row: 1/2;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+}
+
+.profile-img {
+
+    width: 75%;
+    height: auto;
+
+}
+
+.temple-name {
+    padding: 2px;
+    position: absolute;
+    left: 30px;
+    top: 440px;
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    font-size: xx-small;
+
+
+
+}
+
+nav {
+    grid-row: 2;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    justify-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgb(5, 32, 84);
+
+}
+
+
+ul a:hover {
+
+    color: rgb(250, 198, 28);
+
+}
+
+main {
+    display: grid;
+    grid-row: 3/10;
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 50px 0.3fr 0.3fr;
+    justify-items: center;
+    padding: 10px;
+    border-bottom: solid medium white;
+    background-color: white;
+    gap: 10px;
+}
+
+main h2 {
+    grid-row: 2;
+    grid-column: 1/3;
+    align-self: center;
+}
+
+.card2 {
+    display: grid;
+    grid-template-rows: 35px 1fr 0.5fr 50px;
+    grid-template-columns: 1fr;
+    grid-row: 4;
+    grid-column: 1;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    gap: 5px;
+    width: 96%;
+    height: 96%;
+    background: #052054;
+    box-shadow: 2px 2px 2px rgb(2, 3, 89);
+    font-size: smaller;
+}
+
+.card2 h3 {
+
+    grid-row: 1;
+    grid-column: 1;
+    border-bottom: white solid 1px;
+    margin: 0px;
+
+}
+
+.map-wtr-info {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: auto;
+    width: 100%;
+    height: auto;
+    grid-row: 2;
+    grid-column: 1;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card2 iframe {
+    width: 50%;
+    height: auto;
+    grid-column: auto;
+    grid-row: 2;
+}
+
+.ctn-weather {
+    width: max-content;
+    height: max-content;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.windchill-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    grid-row: 3;
+    grid-column: 1;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.card2 #visits {
+
+    grid-row: 4;
+    grid-column: 1/3;
+    text-align: center;
+    padding-top: 9px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+footer {
+
+    display: grid;
+    grid-row: 10/13;
+    grid-column: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    background-color: rgb(22, 98, 205);
+    align-items: center;
+}
+
+.current-year {
+    grid-row: 1;
+    grid-column: 1;
+    width: 50%;
+    padding: 0px;
+
+
+
+}
+
+#lastModified {
+    grid-row: 2;
+    grid-column: 1/4;
+    width: 100%;
+    padding: 0px;
+    justify-self: center;
+    text-align: center;
+}
+
+.mp4 {
+
+    width: 150px;
+    height: auto;
+    grid-row: 1;
+    grid-column: 2/2;
+    justify-self: center;
+}
+
+/* CSS FOR HAMBURGER BOTTON */
+/* small view navigation */
+#menu {
+    background-color: rgb(5, 32, 84);
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 440px;
+
+}
+
+#menu::before {
+    content: "☰";
+
+}
+
+#menu.open::before {
+    content: "🆇";
+}
+
+#menu:hover {
+    color: rgb(250, 198, 28);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: rgb(250, 198, 28);
+}
+
+.open a {
+    display: block;
+}
+
+/* FORM CSS */
+
+.wf1 {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    background: #052054;
+    box-shadow: 2px 2px 2px rgb(2, 3, 89);
+    justify-self: center;
+
+}
+
+.wf1 fieldset {
+
+    /* margin: 2reM 0; */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* padding: .5rem 2%; */
+    padding-left: 15%;
+    padding-bottom: 1rem;
+    padding-top: 0px;
+
+}
+
+fieldset {
+    padding: 0%;
+}
+
+.wf1 legend {
+
+    color: yellow;
+    padding: .5rem;
+
+}
+
+.wf1 label {
+
+
+    display: block;
+    padding-top: 1rem;
+    color: white;
+    font-size: .9rem;
+
+}
+
+.wf1 div {
+
+    padding-top: 1rem;
+    color: navy;
+    font-size: .9rem;
+
+}
+
+.wf1 input[type='text'],
+.wf1 input[type='tel'],
+.wf1 input[type='email'],
+.wf1 input[type='url'],
+.wf1 input[type='password'],
+.wf1 input[type='number'] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px lightgray;
+    border-radius: 6px;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    min-height: 44px;
+    appearance: none;
+
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    justify-self: center;
+    border: none;
+    background: linear-gradient(to right, rgb(144, 203, 239), white, yellow, white, rgb(144, 203, 239));
+    color: black;
+    border: 6px;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px lightgray;
+
+
+}
+.wf1 input[type="submit"]:hover{
+
+    cursor: pointer;
+
+}
+.wf1 input:required {
+    border-bottom: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+@media screen and (min-width: 900px) {
+
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        display: grid;
+        grid-column: 1/3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 30px;
+        gap: 0px;
+        align-items: center;
+        background: linear-gradient(rgb(44, 109, 199), rgb(5, 32, 84));
+    }
+
+    picture {
+        justify-self: center;
+        align-self: center;
+        width: 50%;
+        height: auto;
+    }
+
+    .profile-img {
+        justify-self: left;
+        width: 100%;
+        height: auto;
+
+    }
+
+    header h1 {
+        justify-self: left;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    nav {
+        grid-row: 2;
+        grid-column: 1/3;
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        border-bottom: 1px solid white;
+
+
+    }
+
+    nav a {
+        width: max-content;
+        height: max-content;
+
+
+    }
+
+    nav a:hover {
+        color: rgb(250, 198, 28);
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .card2 {
+        grid-row: 3;
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: 50px 1fr 1fr 50px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 0px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 3rem;
+
+    }
+
+    .card2 h3 {
+
+        grid-row: 1;
+        grid-column: 1/3;
+
+    }
+
+    .map-wtr-info {
+        display: grid;
+        grid-row: 2;
+        grid-column: 1/3;
+        gap: 30px;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card2 #visits {
+
+        grid-row: 4;
+        grid-column: 1/3;
+
+    }
+
+    .windchill-box {
+        grid-row: 3;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .card2 #visits {
+
+        /* margin-top: 15px;
+        margin-bottom: 15px; */
+        border: none;
+
+    }
+
+    footer {
+
+        grid-column: 1/3;
+    }
+}

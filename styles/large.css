@@ -1,5 +1,9 @@
 @media screen and (min-width: 900px) {
 
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -149,9 +153,7 @@
     }
     .card2 #visits {
 
-        margin-top:15px;
-        margin-bottom: 15px;
-  
+        border: none;
     }
     /* CAMBIOS DEL HAMBURGER BOTTON */
     /* large view navigation ************************************/
