@@ -82,10 +82,10 @@ if (htmlname == "join.html") {
 
 
 
-    bttnsubmit.addEventListener('submit', function (event) {
+    bttnsubmit.addEventListener('click', function (event) {
 
-        // event.preventDefault();
-        window.location.href = 'chamber/thanks.html';
+        event.preventDefault();
+        window.location.href = 'thanks.html';
     });
 
 }
