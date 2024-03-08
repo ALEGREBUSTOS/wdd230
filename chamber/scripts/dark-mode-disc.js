@@ -4,6 +4,9 @@ const header = document.querySelector("header");
 const main = document.querySelector("main")
 const h3titles=document.querySelectorAll("h3")
 const navbarelemnts= document.querySelectorAll('.nav-bar a')
+const form= document.querySelector(".wf1")
+const legend = document.querySelector(".wf1 legend")
+const htmlnamee = document.URL.substring(document.URL.lastIndexOf("/") + 1)
 
 
 modeButton.addEventListener("click", () => {
@@ -14,6 +17,13 @@ modeButton.addEventListener("click", () => {
         body.style.color = "#FEFAE0";
         header.style.background = "#283618";
         header.style.color = "#FEFAE0";
+        if(htmlnamee == "join.html"){
+            form.style.background = "#283618";
+            form.style.color = "#FEFAE0";
+            legend.style.background = "#283618";
+            legend.style.color = "#FEFAE0";
+        }
+ 
         navbarelemnts.forEach(function(a) {
             a.style.color = "#FEFAE0"; 
             a.style.background = "#283618";
@@ -29,6 +39,12 @@ modeButton.addEventListener("click", () => {
         body.style.color = "#283618";
         header.style.background = "#FEFAE0";
         header.style.color = "#283618";
+        if(htmlnamee == "join.html"){
+            form.style.background = "#FEFAE0";
+            form.style.color = "#283618";
+            legend.style.background = "#FEFAE0";
+            legend.style.color = "#283618";
+        }
         navbarelemnts.forEach(function(a) {
             a.style.color = "#283618"; 
             a.style.background = "#FEFAE0";
@@ -39,3 +55,5 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "🌑";
     }
 });
+
+

@@ -182,10 +182,12 @@ main {
     font-family: var(--font-Archivo-Narrow);
     text-align: center;
 }
-.event picture{
+
+.event picture {
     display: grid;
     justify-items: center;
 }
+
 .event img {
     width: 60%;
     height: auto;
@@ -202,6 +204,7 @@ main {
     align-items: center;
     align-content: stretch;
 }
+
 .weather h4 {
     font-family: var(--font-Lato);
     text-align: center;
@@ -214,10 +217,12 @@ main {
     text-align: center;
 
 }
-.weather picture{
+
+.weather picture {
     display: grid;
     justify-items: center;
 }
+
 .weather img {
     width: 60%;
     height: auto;
@@ -366,7 +371,8 @@ main {
 }
 
 footer {
-
+    grid-row: 6;
+    grid-column: auto;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 3fr;
@@ -448,11 +454,12 @@ footer div {
     padding: 7px 15px 0px 15px;
 }
 
-.testimonial{
+.testimonial {
     display: grid;
     justify-items: center;
     align-items: center;
 }
+
 .mercado {
     width: 100%;
     height: 100%;
@@ -494,21 +501,22 @@ footer div {
     gap: 10px;
 
 }
-.puerto picture img{
+
+.puerto picture img {
 
     box-shadow: 2px 2px 2px rgb(89, 45, 2);
     justify-items: center;
     align-items: center;
 }
 
-.peatonal picture img{
+.peatonal picture img {
 
     box-shadow: 2px 2px 2px rgb(89, 45, 2);
     justify-items: center;
     align-items: center;
 }
 
-.mercado picture img{
+.mercado picture img {
 
     box-shadow: 2px 2px 2px rgb(89, 45, 2);
     justify-items: center;
@@ -526,4 +534,161 @@ p {
     width: 100%;
     font-family: var(--font-Archivo-Narrow);
     text-align: center;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* CSS FOR JOIN PAGE */
+
+
+/* FORM CSS */
+
+.wf1 {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1/2;
+    width: 100%;
+    height: auto;
+    background: var(--color-background2);
+    justify-self: center;
+
+}
+
+.wf1 fieldset {
+    display: grid;
+    /* margin: 2reM 0; */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* padding-left: 13%; */
+}
+
+
+.wf1 legend {
+
+    color: var(--color-letter2);
+    padding: .5rem;
+    font-family: var(--font-Lato);
+}
+
+.wf1 label {
+
+
+    display: block;
+    padding-top: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    color: var(--color3);
+    font-size: .9rem;
+    font-family: var(--font-Archivo-Narrow);
+
+}
+
+.wf1 div {
+
+    padding-top: 1rem;
+    color: navy;
+    font-size: .9rem;
+
+}
+
+.wf1 input[type='text'],
+.wf1 input[type='email'] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px lightgray;
+    border-radius: 6px;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    min-height: 44px;
+    appearance: none;
+
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    justify-self: center;
+    border: none;
+    background: var(--color-background1);
+    color: var(--color-background2);
+    border: 6px;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px lightgray;
+
+
+}
+
+.wf1 input[type="submit"]:hover {
+
+    cursor: pointer;
+
+}
+
+.wf1 input:required {
+    border-bottom: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.wf1 #description {
+    max-width: 500px;
+    max-height: 500px;
+    width: 400px;
+    height: 200px;
+    text-align: start;
+}
+
+.wf1 #description::placeholder {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    transform: translateY(-100%);
+    font-size: 12px;
+    color: #999;
+}
+#bnpmem,
+#bmem,
+#smem,
+#gmem {
+    display: none;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    color: var(--color-letter2);
+    background: var(--color-background2);
+    justify-self: center;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* THANKS PAGE */
+
+.thkmain{
+
+    grid-row: 2/6;
+    grid-column: auto;
+    background-color: var(--color-background2);
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
 }

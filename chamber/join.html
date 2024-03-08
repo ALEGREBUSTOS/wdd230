@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejo Alegre Bustos">
+    <meta property="og:title" content="Santa Fe Chamber of Commerce - WDD 230 PROJECT" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/8/88/Casa_de_Gobierno_de_Santa_Fe.jpg?20150313183317" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="https://alegrebustos.github.io/chamber/discover/discover.html" />
+    <meta property="article:modified_time" content="2024-02-23T07:12:30Z" />
+    <meta name="description"
+        content="This is an academic project where you can find all the activities in which I will be working during this semester.">
+
+    <title>Santa Fe Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/puente-colgante.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+
+        <h1>Santa Fe Chamber of Commerce</h1>
+
+        <button id="menu"></button>
+        <div id="mode">🌑</div>
+        <nav class="nav-bar">
+            <a rel="preload" href="index.html">Home</a>
+            <a rel="preload" href="discover.html">Discover</a>
+            <a rel="preload" href="">Directory</a>
+            <a rel="preload" href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="jmain">
+
+        <form action="" method="get" class="wf1">
+
+            <fieldset>
+                <legend>New Joiners</legend>
+                <label>First name*<input id="fname" type="text" name="fname" required></label>
+                <label>Last name*<input id="lname" type="text" name="lname" required></label>
+                <label>Title or Position<input id="title" type="text" name="title" pattern="^[a-zA-Z\- ]{7,}$"
+                        required></label>
+                <label>Name of Business<input id="bsname" type="text" name="bsname" required></label>
+                <label>Email*<input id="email" type="email" name="email" placeholder="✉️ someone@mail.com"
+                        required></label>
+                <label>Membership Level</label>
+                <label><input type="radio" name="membership" id="np-membership" value="np-membership">NP Membership</label>
+                <label><input type="radio" name="membership" id="b-pmembership" value="b-pmembership">Bronze Membership</label>
+                <label><input type="radio" name="membership" id="s-membership" value="s-membership">Silver Membership</label>
+                <label><input type="radio" name="membership" id="g-membership" value="g-membership">Gold Membership</label>
+                
+                <label>Description<input type="text" name="description" id="description"
+                        placeholder="✍️ Write your description here..."></label>
+                <input type="hidden" name="timerecord" id="timerecord">
+                <div id="bnpmem">
+                    <h3>NP Membershi</h3>
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>Access to exclusive business resources tailored for non-profit organizations.</li>
+                        <li>Free attendance to business-oriented events and webinars.</li>
+                        <li>Networking opportunities with businesses and community leaders.</li>
+                        <li>Complimentary business consultation services.</li>
+                    </ul>
+                    <p>Cost: FREE</p>
+                </div>
+
+                <div id="bmem">
+                    <h3>Bronze Membership</h2>
+                        <h5>Benefits</h5>
+                        <ul>
+                            <li>All NP Membership benefits.</li>
+                            <li>Monthly business insights newsletter.</li>
+                            <li>Exclusive discounts on business training and development programs.</li>
+                            <li>Access to premium business documents and templates.</li>
+                        </ul>
+                        <p>Price: $50 per month.</p>
+                </div>
+
+                <div id="smem">
+                    <h3>Silver Membership</h2>
+                        <h5>Benefits</h5>
+                        <ul>
+                            <li>All Bronze Membership benefits.</li>
+                            <li>Free participation in an annual business seminar or workshop.</li>
+                            <li>Business promotion and advertising opportunities on the chamber's platform.</li>
+                            <li>Personalized advice on business growth strategies.</li>
+                        </ul>
+                        <p>Price: $100 per month.</p>
+                </div>
+
+
+                <div id="gmem">
+                    <h3>Gold Membership</h2>
+                    <h5>Benefits</h5>
+                    <ul>
+                        <li>All NP, Bronze, and Silver Membership benefits.</li>
+                        <li>Unlimited access to all business-related events and conferences.</li>
+                        <li>Priority consideration for business grants and sponsorships.</li>
+                        <li>Advanced strategic business consultation with industry experts.</li>
+                        <li>Prominent business advertising on the chamber's website and promotional materials.</li>
+                    </ul>
+                    <p>Price: $200 per month.</p>
+                </div>
+            </fieldset>
+
+            <input id="btnsubmit"  action="chamber\thanks.html" type="submit" value="Join me">
+
+        </form>
+
+    </main>
+    <footer>
+        <div>
+            <h2>Contact Us</h2>
+            <address>Av. Capputto and Bv. Pellegrini</address>
+            <a href="mailto:sfcc@gmail.com">sfcc@gmail.com</a>
+            <h4>WDD 230 - CHAMBER PROJECT</h4>
+        </div>
+        <p class="current-year" id="current-year"> asd</p>
+        <p id="lastModified">asdasda</p>
+    </footer>
+    <script src="scripts/hamburger-botton-disc.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/dark-mode-disc.js"></script>
+</body>
+
+</html>
