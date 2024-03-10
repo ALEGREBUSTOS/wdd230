@@ -2,6 +2,7 @@ const hbgButton = document.querySelector('#menu');
 const navigation = document.querySelector('.nav-bar');
 const bttnsubmit = document.querySelector("#btnsubmit")
 const htmlname = document.URL.substring(document.URL.lastIndexOf("/") + 1)
+const form = document.querySelector(".wf1")
 
 hbgButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -63,6 +64,22 @@ if (htmlname == "join.html") {
 
 
 
+    function datetime() {
+
+        const time = new Date();
+        const formattedTime = `last modified in ${padZero(time.getDate())}/${padZero(time.getMonth() + 1)}/${time.getFullYear()} - ${time.toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })}`;
+        const showtime = document.querySelector("#timerecord");
+        showtime.type = 'text';
+        showtime.style.textAlign = "center"
+        showtime.value = formattedTime;
+    }
+
+    function padZero(number) {
+        return number < 10 ? '0' + number : number;
+    }
+
+
+
     npmembership.addEventListener("change", function () {
 
         showbenefits()
@@ -84,8 +101,25 @@ if (htmlname == "join.html") {
 
     bttnsubmit.addEventListener('click', function (event) {
 
+
         event.preventDefault();
         window.location.href = 'thanks.html';
+    });
+
+
+    form.addEventListener('load', function () {
+
+
+        datetime();
+
+    });
+
+
+    form.addEventListener('change', function () {
+
+
+        datetime();
+
     });
 
 }
