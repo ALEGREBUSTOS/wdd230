@@ -29,43 +29,46 @@ function Profile() {
   return (
     <>
       <h1>{userData.name}</h1>
-      <img
-        className="avatar"
-        src={userData.imageUrl}
-        alt={`Photo of ${userData.name}`}
-        style={{
-          width: userData.imageSize,
-          height: userData.imageSize,
-          padding
-        }}
-      />
-  
-      <h1>{userData.name}</h1>
-      <img
-        className="avatar"
-        src={userData.imageUrl}
-        alt={`Photo of ${userData.name}`}
-        style={{
-          width: userData.imageSize,
-          height: userData.imageSize,
-          padding
-        }}
-      />
+      <div style={{ padding: "10px" }}>
+        <img
+          className="avatar"
+          src={userData.imageUrl}
+          alt={`Photo of ${userData.name}`}
+          style={{
+            width: userData.imageSize,
+            height: userData.imageSize,
+          }}
+        />
+      </div>
 
       <h1>{userData.name}</h1>
-      <img
-        className="avatar"
-        src={userData.imageUrl}
-        alt={`Photo of ${userData.name}`}
-        style={{
-          width: userData.imageSize,
-          height: userData.imageSize,
-          padding
-        }}
-      />
+      <div style={{ padding: "10px" }}>
+        <img
+          className="avatar"
+          src={userData.imageUrl}
+          alt={`Photo of ${userData.name}`}
+          style={{
+            width: userData.imageSize,
+            height: userData.imageSize,
+          }}
+        />
+      </div>
+
+      <h1>{userData.name}</h1>
+      <div style={{ padding: "10px" }}>
+        <img
+          className="avatar"
+          src={userData.imageUrl}
+          alt={`Photo of ${userData.name}`}
+          style={{
+            width: userData.imageSize,
+            height: userData.imageSize,
+          }}
+        />
+      </div>
     </>
 
-    
+
   );
 }
 
