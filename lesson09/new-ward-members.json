@@ -1,0 +1,30 @@
+{
+    "information": {
+    "familyname": "Perez",
+    "movein": "2023-03-15",
+    "numberofintegrants": 4,
+    "visitedbybishop": true,
+    "memberoffamily": [
+      {
+        "name": "Juan Perez",
+        "gender": "Male",
+        "birthdate": "1998-05-20"
+      },
+      {
+        "name": "Juana Perez",
+        "gender": "Female",
+        "birthdate": "1996-11-12"
+      },
+      {
+        "name": "Raul Perez",
+        "gender": "Male",
+        "birthdate": "2001-02-03"
+      },
+      {
+        "name": "Emilse Perez",
+        "gender": "Female",
+        "birthdate": "2005-09-02"
+      }
+    ]
+    }
+  }
