@@ -594,7 +594,8 @@ p {
 }
 
 .wf1 input[type='text'],
-.wf1 input[type='email'] {
+.wf1 input[type='email'],
+.wf1 input[type='tel'] {
     background-color: #eee;
     display: block;
     border: solid 1px lightgray;
