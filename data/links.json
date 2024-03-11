@@ -2,6 +2,7 @@
     "lessons": [
         {
             "lesson": "01",
+            "week": "week01",
             "links": [
                 {
                     "url": "lesson01/holygrail.html",
@@ -19,6 +20,7 @@
         },
         {
             "lesson": "02",
+            "week": "week02",
             "links": [
                 {
                     "url": "lesson02/mediaquery.html",
@@ -32,6 +34,7 @@
         },
         {
             "lesson": "03",
+            "week": "week03",
             "links": [
                 {
                     "url": "lesson03/chamber-site-plan.html",
@@ -41,6 +44,7 @@
         },
         {
             "lesson": "04",
+            "week": "week04",
             "links": [
                 {
                     "url": "https://codepen.io/Alegre-Bustos-/pen/PoLXeJq",
@@ -58,6 +62,7 @@
         },
         {
             "lesson": "05",
+            "week": "week05",
             "links": [
                 {
                     "url": "lesson05/bom.html",
@@ -67,6 +72,7 @@
         },
         {
             "lesson": "06",
+            "week": "week06",
             "links": [
                 {
                     "url": "lesson06/images/landscape.webp",
@@ -80,6 +86,7 @@
         },
         {
             "lesson": "07",
+            "week": "week07",
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
@@ -93,6 +100,7 @@
         },
         {
             "lesson": "08",
+            "week": "week08",
             "links": [
                 {
                     "url": "lesson08/tablebuild.html",
@@ -106,6 +114,7 @@
         },
         {
             "lesson": "09",
+            "week": "week09",
             "links": [
                 {
                     "url": "lesson09/prophets.html",
@@ -115,6 +124,7 @@
         },
         {
             "lesson": "Data",
+            "week": "dataWeek",
             "links": [
                 {
                     "url": "data/links.json",
