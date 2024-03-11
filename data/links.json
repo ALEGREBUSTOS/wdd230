@@ -10,6 +10,10 @@
                 {
                     "url": "lesson01/media-query.html",
                     "title": "CSS Media Queries"
+                },
+                {
+                    "url": "https://codepen.io/Alegre-Bustos-/pen/QWoGvoB",
+                    "title": "Codepen JS"
                 }
             ]
         },
@@ -22,7 +26,99 @@
                 },
                 {
                     "url": "lesson02/design.html",
-                    "title": " Web Design Principles - Activity "
+                    "title": "Web Design Principles - Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Alegre-Bustos-/pen/PoLXeJq",
+                    "title": "Responsive Navigation"
+                },
+                {
+                    "url": "https://codepen.io/Alegre-Bustos-/pen/rNRQXvr",
+                    "title": "Pseudo-element"
+                },
+                {
+                    "url": "https://codepen.io/Alegre-Bustos-/pen/Yzggqjy?editors=1100",
+                    "title": "Pseudo-class Fun"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "📖 Book of Mormon - Top 10"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html.html",
+                    "title": "Responsive Images:srcset"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "lesson07/BOM/bom.html",
+                    "title": "Web Storage API - localStorage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "lesson08/Form-start/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets API"
+                }
+            ]
+        },
+        {
+            "lesson": "Data",
+            "links": [
+                {
+                    "url": "data/links.json",
+                    "title": "Data"
                 }
             ]
         }
