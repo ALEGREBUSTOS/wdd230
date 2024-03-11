@@ -1,0 +1,30 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holygrail Activity"
+                },
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "CSS Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/mediaquery.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design.html",
+                    "title": " Web Design Principles - Activity "
+                }
+            ]
+        }
+    ]
+}
