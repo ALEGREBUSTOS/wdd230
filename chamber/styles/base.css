@@ -693,3 +693,16 @@ p {
 
 
 }
+
+
+/*  */
+/*  */
+/*  */
+/* DIRECTORY STYLES */
+
+.direc-main{
+
+    display: flex
+    ;
+
+}

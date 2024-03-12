@@ -22,14 +22,14 @@ function displaymembers(companies) {
         address.textContent = `${company.address}`;
         website.href = company.website;
         website.textContent = company.name;
-        website.style.color = "white"
+        website.style.color = "#283618"
         website.style.transition = "color 0.3s ease";
         website.style.textDecoration = "none";
         website.addEventListener("mouseover", () => {
-            website.style.color = " #ffdf00";
+            website.style.color = "#BC6C25";
         });
         website.addEventListener("mouseout", () => {
-            website.style.color = "white"
+            website.style.color = "#283618"
         });
         phone.textContent = `Tel: ${company.phone}`;
         aditionalinfor.textContent = `Additional information: ${company.additional_info}`;
