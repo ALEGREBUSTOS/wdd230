@@ -702,7 +702,62 @@ p {
 
 .direc-main{
 
-    display: flex
-    ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-background2);
+    padding: 30px;
+
+}
+
+.cardm{
+
+    padding: 10px;
+    
+
+}
+.cardm h3{
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.bttn-box{
+
+    display: flex;
+    justify-items: center;
+    border-bottom: var(--color-letter2) 3px solid;
+    width: max-content;
+    height: auto;
+
+}
+
+#hbl{
+
+    background-color: transparent;
+    border: none;
+    max-width: 30px;
+    max-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    left: 290px;
+    justify-self: center;
+
+}
+
+#vbl{
+
+    background-color: transparent;
+    border: none;
+    max-width: 25px;
+    max-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    justify-self: center;
 
 }
