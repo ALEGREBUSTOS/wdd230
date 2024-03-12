@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Tech Innovators Inc.",
+            "address": "123 Innovation Drive, Tech City, CA",
+            "phone": "555-1234",
+            "website": "www.techinnovators.com",
+            "image": "techinnovators_logo.png",
+            "membership_level": "Premium",
+            "additional_info": "Leaders in cutting-edge technology solutions."
+        },
+        {
+            "name": "Globex Corporation",
+            "address": "456 Global Street, Megacity, NY",
+            "phone": "555-5678",
+            "website": "www.globexcorp.com",
+            "image": "globex_logo.png",
+            "membership_level": "Elite",
+            "additional_info": "Providing global business services and innovations."
+        },
+        {
+            "name": "Sustainable Living Co.",
+            "address": "789 Green Avenue, EcoTown, CA",
+            "phone": "555-9876",
+            "website": "www.sustainablelivingco.com",
+            "image": "sustainableliving_logo.png",
+            "membership_level": "Platinum",
+            "additional_info": "Championing eco-friendly living solutions worldwide."
+        },
+        {
+            "name": "Sunset Resorts & Spas",
+            "address": "321 Serenity Lane, Beach Paradise, FL",
+            "phone": "555-4321",
+            "website": "www.sunsetresortsandspas.com",
+            "image": "sunsetresorts_logo.png",
+            "membership_level": "Gold",
+            "additional_info": "Luxury resorts and spas with breathtaking views."
+        },
+        {
+            "name": "Green Energy Solutions",
+            "address": "567 Eco Drive, Renewables City, TX",
+            "phone": "555-8765",
+            "website": "www.greenenergysolutions.com",
+            "image": "greenenergy_logo.png",
+            "membership_level": "Silver",
+            "additional_info": "Pioneering sustainable and renewable energy solutions."
+        },
+        {
+            "name": "TechGear Pro",
+            "address": "987 Gear Avenue, Silicon Valley, CA",
+            "phone": "555-5432",
+            "website": "www.techgearpro.com",
+            "image": "techgearpro_logo.png",
+            "membership_level": "Bronze",
+            "additional_info": "Your source for professional-grade tech accessories."
+        },
+        {
+            "name": "Fresh & Fit Catering",
+            "address": "654 Health Street, Wellness City, CA",
+            "phone": "555-2345",
+            "website": "www.freshandfitcatering.com",
+            "image": "freshfit_logo.png",
+            "membership_level": "Gold",
+            "additional_info": "Catering services with a focus on fresh and healthy cuisine."
+        }
+    ]
+}
