@@ -5,7 +5,7 @@
             "address": "123 Innovation Drive, Tech City, CA",
             "phone": "555-1234",
             "website": "www.techinnovators.com",
-            "image": "techinnovators_logo.png",
+            "image": "chamber/images/tinnov.webp",
             "membership_level": "Premium",
             "additional_info": "Leaders in cutting-edge technology solutions."
         },
@@ -14,7 +14,7 @@
             "address": "456 Global Street, Megacity, NY",
             "phone": "555-5678",
             "website": "www.globexcorp.com",
-            "image": "globex_logo.png",
+            "image": "chamber/images/globcorp.webp",
             "membership_level": "Elite",
             "additional_info": "Providing global business services and innovations."
         },
@@ -23,7 +23,7 @@
             "address": "789 Green Avenue, EcoTown, CA",
             "phone": "555-9876",
             "website": "www.sustainablelivingco.com",
-            "image": "sustainableliving_logo.png",
+            "image": "chamber/images/sustainliving.webp",
             "membership_level": "Platinum",
             "additional_info": "Championing eco-friendly living solutions worldwide."
         },
@@ -32,7 +32,7 @@
             "address": "321 Serenity Lane, Beach Paradise, FL",
             "phone": "555-4321",
             "website": "www.sunsetresortsandspas.com",
-            "image": "sunsetresorts_logo.png",
+            "image": "chamber/images/sunset.webp",
             "membership_level": "Gold",
             "additional_info": "Luxury resorts and spas with breathtaking views."
         },
@@ -41,7 +41,7 @@
             "address": "567 Eco Drive, Renewables City, TX",
             "phone": "555-8765",
             "website": "www.greenenergysolutions.com",
-            "image": "greenenergy_logo.png",
+            "image": "chamber/images/greenenergy.webp",
             "membership_level": "Silver",
             "additional_info": "Pioneering sustainable and renewable energy solutions."
         },
@@ -50,7 +50,7 @@
             "address": "987 Gear Avenue, Silicon Valley, CA",
             "phone": "555-5432",
             "website": "www.techgearpro.com",
-            "image": "techgearpro_logo.png",
+            "image": "chamber/images/techgear.webp",
             "membership_level": "Bronze",
             "additional_info": "Your source for professional-grade tech accessories."
         },
@@ -59,7 +59,7 @@
             "address": "654 Health Street, Wellness City, CA",
             "phone": "555-2345",
             "website": "www.freshandfitcatering.com",
-            "image": "freshfit_logo.png",
+            "image": "chamber/images/freshfit.webp",
             "membership_level": "Gold",
             "additional_info": "Catering services with a focus on fresh and healthy cuisine."
         }
