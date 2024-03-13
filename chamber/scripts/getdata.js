@@ -7,7 +7,7 @@ async function getdata() {
 }
 
 function displaymembers(companies) {
-    const cards = document.querySelector(".direc-main");
+    const cards = document.querySelector("#direc-main");
     
     companies.forEach((company) => {
         let card = document.createElement('section');

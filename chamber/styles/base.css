@@ -700,11 +700,11 @@ p {
 /*  */
 /* DIRECTORY STYLES */
 
-.direc-main{
+#direc-main{
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     justify-items: center;
     align-items: center;
     gap: 20px;
@@ -736,21 +736,31 @@ p {
 
 #hbl{
 
-    background-color: transparent;
     border: none;
     max-width: 30px;
     max-height: 30px;
     text-align: center;
     position: absolute;
     top: 120px;
-    left: 290px;
+    left: 250px;
     justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--color-background2);
+    background-color: var(--color-letter2);
+    font-weight: bolder;
+}
+
+#vbl:hover,#hbl:hover{
+
+    cursor: pointer; 
+
 
 }
 
 #vbl{
 
-    background-color: transparent;
+    color: var(--color-background2);
+    background-color: var(--color-letter2);
     border: none;
     max-width: 25px;
     max-height: 25px;
@@ -759,5 +769,7 @@ p {
     top: 120px;
     left: 220px;
     justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 
 }
