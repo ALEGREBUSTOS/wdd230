@@ -131,6 +131,16 @@
                     "title": "Data"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "week": "week10",
+            "links": [
+                {
+                    "url": "lesson10/weather.js",
+                    "title": "OpenWeatherMap.org API Test"
+                }
+            ]
         }
     ]
 }
