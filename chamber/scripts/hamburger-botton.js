@@ -116,9 +116,15 @@ if (htmlname == "join.html") {
 
 
 
+
     bttnsubmit.addEventListener('click', function (event) {
 
+        const bnpmem = document.querySelector("#bnpmem");
+        const bmem = document.querySelector("#bmem");
+        const smem = document.querySelector("#smem");
+        const gmem = document.querySelector("#gmem");
 
+        
         event.preventDefault();
         window.location.href = 'thanks.html';
     });

@@ -29,6 +29,8 @@ function isGridDisplayed(element) {
 }
 
 function changeviewlist() {
+    const htmlnamee = document.URL.substring(document.URL.lastIndexOf("/") + 1)
+    if (htmlnamee == "directory.html"){
     const bttnh = document.querySelector("#hbl");
     const bttnv = document.querySelector("#vbl");
     const main = document.querySelector("#direc-main");
@@ -57,7 +59,7 @@ function changeviewlist() {
         }
 
     });
-}
+}}
 
 
 updatefooter(lastmodification(), currentyear());

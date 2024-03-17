@@ -75,15 +75,33 @@
                     </picture>
             </section>
 
-            <div class="weather">
-                <h4> Weather for Today </h4>
-                <picture>
-                    <source srcset='images/soleado-large-view.webp'  media="(min-width:900px)">
-                    <source srcset='images/soleado-medium-view.webp' media="(min-width:500px) and (max-width:900px)">
-                    <img src="images/soleado-small-view.webp" loading="lazy" alt="small-img" width="399" height="250">
-                </picture>
-                <p>Sunny - 24 °C</p>
-                <p>Humidity: 34%</p>
+            <div class="weatherbox">
+                <h3 class="text">Weather🌞</h3>
+                <div class="ctn-weather">
+                    <h3 class="text">Today</h3>
+                    <p class="text" id="city1"></p>
+                    <p class="text" id="degreesmin1"></p>
+                    <p class="text" id="degreesmax1"></p>
+                    <p class="text" id="description1"></p>
+                    <p class="text" id="icon1"></p>
+                </div>
+                <div class="ctn-weather2">
+                    <h3 class="text">Tomorrow</h3>
+                    <p class="text" id="city2"></p>
+                    <p class="text" id="degreesmin2"></p>
+                    <p class="text" id="degreesmax2"></p>
+                    <p class="text" id="description2"></p>
+                    <p class="text" id="icon2"></p>
+                </div>
+                <div class="ctn-weather3">
+                    <h3 class="text">After Tomorrow</h3>
+                    <p class="text" id="city3"></p>
+                    <p class="text" id="degreesmin3"></p>
+                    <p class="text" id="degreesmax3"></p>
+                    <p class="text" id="description3"></p>
+                    <p class="text" id="icon3"></p>
+                </div>
+
             </div>
 
         </div>
@@ -136,6 +154,7 @@
     <script src="scripts/hamburger-botton.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/currentweather.js"></script>
 </body>
 
 </html>
