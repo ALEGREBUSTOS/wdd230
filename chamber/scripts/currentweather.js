@@ -7,7 +7,7 @@ function wtrforecast(url,citySelector, degreesSelectormin,degreesSelectormax, de
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             const ncity = 'Santa Fe' 
             const cityElement = document.querySelector(citySelector);
             const degreesElementmax = document.querySelector(degreesSelectormax);

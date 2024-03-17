@@ -54,6 +54,16 @@
 
     <main>
 
+        <div id="banner" class="banner">
+            <span class="close-btn" onclick="closeBanner()">×</span>
+            <picture>
+                <source srcset='images/large-conference.webp'  media="(min-width:900px)">
+                <source srcset='images/medium-banner.webp' media="(min-width:500px) and (max-width:900px)">
+                <img src="images/small-conference.webp" alt="small-img" width="399" height="250" loading="lazy">
+            </picture>
+        </div>
+        
+
         <video class="hero-img" autoplay muted playsinline loop>
             <source src="images/santa-fe-trip.webm" type="video/webm"  />
         </video>
@@ -94,7 +104,7 @@
                     <p class="text" id="icon2"></p>
                 </div>
                 <div class="ctn-weather3">
-                    <h3 class="text">After Tomorrow</h3>
+                    <h3 class="text">After tomorrow</h3>
                     <p class="text" id="city3"></p>
                     <p class="text" id="degreesmin3"></p>
                     <p class="text" id="degreesmax3"></p>
