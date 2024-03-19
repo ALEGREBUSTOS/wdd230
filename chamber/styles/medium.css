@@ -28,7 +28,7 @@
 
     #menu {
         position:absolute;
-        left: 62rem;
+        left: 50rem;
     
     }
 
@@ -64,4 +64,21 @@
     }
 
     
+}
+
+/* BANNER */
+
+
+
+.close-btn {
+    position: absolute;
+    top: 340px;
+    left: 650px;
+
+}
+
+.banner picture{
+    position: absolute;
+    top: 400px;
+    left: 200px;
 }

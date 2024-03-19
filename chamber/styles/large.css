@@ -199,6 +199,20 @@
         align-items: center;
         text-align: center;
     }
-
+    .close-btn {
+        position: absolute;
+        top: 150px;
+        left: 1000px;
+        cursor: pointer;
+        color: var(--color-letter1);
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    
+    .banner picture{
+        position: absolute;
+        top: 200px;
+        left: 500px;
+    }
     
 }
