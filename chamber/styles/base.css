@@ -829,6 +829,6 @@ p {
 
 .banner picture{
     position: absolute;
-    top: 4rem;
-    left: 2rem;
+    top: 100px;
+    left: 10px;
 }
