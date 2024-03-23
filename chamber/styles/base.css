@@ -218,6 +218,7 @@ main {
     align-content: center;
     background-color: var(--color-background2);
     padding: 20px 0px;
+    gap: 10px;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 }
@@ -235,11 +236,13 @@ main {
     grid-column: 1;
     justify-items: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: fit-content;
-    
+    width: max-content;
+    height: min-content;  
+    margin: 20px;
+    padding: 30px;
+    border: black solid 1px;
+    border-radius: 35px;
+    text-align: justify;
 }
 .ctn-weather2 {
     display: grid;
@@ -251,10 +254,13 @@ main {
     grid-column: 1;
     justify-items: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: fit-content;
+    width: min-content;
+    height: min-content;  
+    margin: 20px;
+    padding: 30px;
+    border: black solid 1px;
+    border-radius: 35px;
+    text-align: center;
 }
 
 .ctn-weather3 {
@@ -267,20 +273,13 @@ main {
     grid-column: 1;
     justify-items: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: fit-content;
-}
-
-#city1,#city2,#city3{
-    color: var(--color-letter1);
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-#degreesmin1,#degreesmin2,#degreesmin3{
-
-    background-color: rgba(255, 255, 255, 0.5);
+    width: min-content;
+    height: min-content;  
+    margin: 20px;
+    padding: 30px;
+    border: black solid 1px;
+    border-radius: 35px;
+    text-align: center;
 }
 
 .advertisement-box {

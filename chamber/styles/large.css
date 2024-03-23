@@ -174,30 +174,39 @@
         grid-column: 1/4;
     }
     .ctn-weather {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         grid-row: 2;
         grid-column: 1;
         justify-items: center;
         align-items: center;
         text-align: center;
+        padding: 10px 30px;
     }
     .ctn-weather2 {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         grid-row: 2;
         grid-column: 2;
         justify-items: center;
         align-items: center;
         text-align: center;
+        padding: 10px 30px;
 
     }
     
     .ctn-weather3 {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         grid-row: 2;
         grid-column: 3;
         justify-items: center;
         align-items: center;
         text-align: center;
+        padding: 0px 30px;
     }
     .close-btn {
         position: absolute;

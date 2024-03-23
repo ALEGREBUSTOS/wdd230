@@ -7,13 +7,14 @@ function background(description, elemclass) {
     const background = document.querySelector(elemclass);
     if (background) {
         const descriptioncontent = description.toLowerCase();
-        if (descriptioncontent.includes('cloud')) {
-            background.style.backgroundImage = "url('images/dayrain-smaill.webp')";
+        if (descriptioncontent.includes('cloud') || descriptioncontent.includes('rain') ) {
+            background.style.background = 'linear-gradient(to bottom, rgba(128, 128, 128, 0.6), rgba(138, 43, 226, 0.6), rgba(128, 128, 128, 0.6))';
+
         }
         if (descriptioncontent.includes('sunny')) {
-            background.style.backgroundImage = "url('images/sunnyday-small.webp')";
+            background.style.background = "linear-gradient(to bottom, rgba(217, 247, 249, 0.6), rgba(247, 123, 46, 0.6), rgba(217, 247, 249, 0.6))";
+
         }
-        background.style.backdropFilter = "blur(100px)";
     }
 }
 // Ahora queda hacer que las letras se intenamos hace un blur pero no esta funcionando,
@@ -32,8 +33,8 @@ function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, 
             cityelement.textContent = ncity;
             let degree_celsiusmin = (data.list[index].main.temp_min - 273.15).toFixed(0);
             let degree_celsiusmax = (data.list[index].main.temp_max - 273.15).toFixed(0);
-            degreeselementmin.textContent = `${degree_celsiusmin} ℃`;
-            degreeselementmax.textContent = `${degree_celsiusmax} ℃`;
+            degreeselementmin.textContent = `Min ${degree_celsiusmin} ℃`;
+            degreeselementmax.textContent = `Max ${degree_celsiusmax} ℃`;
             const iconimg = document.createElement('img');
             iconimg.src = `https://openweathermap.org/img/wn/${data.list[index].weather[0].icon}@2x.png`;
             iconimg.style.width = "50px";
