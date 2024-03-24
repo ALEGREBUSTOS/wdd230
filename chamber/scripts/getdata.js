@@ -53,6 +53,7 @@ function displaymembers(companies) {
         card.style.alignItemsItems = "center";
         card.style.textAlign = "center";
         card.classList = "cardm";
+        card.style.boxShadow = "5px 5px 5px 5px rgba(0, 0, 0, 0.3)";
         cards.appendChild(card);
     });
 }

@@ -40,6 +40,7 @@ function changeviewlist() {
             main.style.display = "flex";
             main.style.flexDirection = "row";
             main.style.flexWrap = "no wrap";
+            main.style.justifyContent = "center";
         }else {
             main.style.display = "grid";
             main.style.gridTemplateColumns = "1fr";
@@ -56,6 +57,7 @@ function changeviewlist() {
             main.style.display = "flex";
             main.style.flexDirection = "row";
             main.style.flexWrap = "wrap";
+            main.style.justifyContent = "center";
         }
 
     });

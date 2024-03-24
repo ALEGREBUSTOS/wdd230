@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const header = document.querySelector("header");
 const eventweatherbox = document.querySelector(".event-weather-box");
 const eventbox = document.querySelector(".event");
-const weatherbox = document.querySelector(".weather");
+const weatherbox = document.querySelector(".weatherbox");
 const advertisementbox = document.querySelector(".advertisement-box");
 const advertisementboxes = document.querySelectorAll(".advertisement-box > div");
 const h4Element1 = document.querySelector('.advertisement-1 h4');
@@ -76,7 +76,21 @@ modeButton.addEventListener("click", () => {
                 h3.style.borderBottomColor = "#FEFAE0";
             });
         }
-
+        if (htmlnamee == "directory.html") {
+            const main = document.querySelector("main")
+            const h3titles = document.querySelectorAll("h3")
+            const vbl=document.querySelector("#vbl")
+            const hbl=document.querySelector("#hbl")
+            main.style.background = "#283618";
+            main.style.color = "#FEFAE0";
+            vbl.style.background = "#FEFAE0";
+            vbl.style.color = "#283618";
+            hbl.style.background = "#FEFAE0";
+            hbl.style.color = "#283618";
+            h3titles.forEach(function (h3) {
+                h3.style.borderBottomColor = "#FEFAE0";
+            });
+        }
         navbarelemnts.forEach(function (a) {
             a.style.color = "#FEFAE0";
             a.style.background = "#283618";
@@ -137,6 +151,23 @@ modeButton.addEventListener("click", () => {
                 h3.style.borderBottomColor = "#283618";
             })
         }
+
+        if (htmlnamee == "directory.html") {
+            const main = document.querySelector("main")
+            const h3titles = document.querySelectorAll("h3")
+            const vbl=document.querySelector("#vbl")
+            const hbl=document.querySelector("#hbl")
+            main.style.background = "#FEFAE0";
+            main.style.color = "#283618";
+            vbl.style.background = "#283618";
+            vbl.style.color = "#FEFAE0";
+            hbl.style.background = "#283618";
+            hbl.style.color = "#FEFAE0";
+            h3titles.forEach(function (h3) {
+                h3.style.borderBottomColor = "#283618";
+            })
+        }
+
         navbarelemnts.forEach(function (a) {
             a.style.color = "#283618";
             a.style.background = "#FEFAE0";
@@ -160,8 +191,6 @@ function showBannerOnDays() {
     
     if (dayOfWeek >= 1 && dayOfWeek <= 3) {
         banner.style.display = "block";
-    } else {
-        banner.style.display = "none";
     }
 }
 

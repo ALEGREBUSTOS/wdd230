@@ -17,8 +17,7 @@ function background(description, elemclass) {
         }
     }
 }
-// Ahora queda hacer que las letras se intenamos hace un blur pero no esta funcionando,
-// Deberiamos agregar un desenfoque por background de parrafo sino
+
 function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, descriptionselector, iconselector, index, elementclass) {
     fetch(url)
         .then(response => response.json())
