@@ -36,7 +36,11 @@ function displaymembers(companies) {
         aditionalinfor.style.textAlign = 'center';
         img.setAttribute('src', company.image);
         img.setAttribute('alt', `This is ${company.name}`);
-        img.setAttribute('loading', 'lazy');
+        if(company.name = "Tech Innovators Inc."){ 
+            img.setAttribute('loading', 'edge');
+        } else {
+            img.setAttribute('loading', 'lazy');
+        }
         img.setAttribute('width', '240');
         img.setAttribute('height', '240');
         img.style.padding = "50px";

@@ -648,11 +648,11 @@ p {
 .wf1 input[type='text'],
 .wf1 input[type='email'],
 .wf1 input[type='tel'] {
-    background-color: #eee;
+    background-color: white;
     display: block;
     border: solid 1px lightgray;
     border-radius: 6px;
-    color: gray;
+    color: black;
     width: 100%;
     max-width: 400px;
     min-height: 44px;

@@ -34,12 +34,10 @@ function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, 
             let degree_celsiusmax = (data.list[index].main.temp_max - 273.15).toFixed(0);
             degreeselementmin.textContent = `Min ${degree_celsiusmin} ℃`;
             degreeselementmax.textContent = `Max ${degree_celsiusmax} ℃`;
-            const iconimg = document.createElement('img');
-            iconimg.src = `https://openweathermap.org/img/wn/${data.list[index].weather[0].icon}@2x.png`;
-            iconimg.style.width = "50px";
-            iconimg.style.height = "50px";
-            iconelement.innerHTML = '';
-            iconelement.appendChild(iconimg);
+            // const iconimg = document.createElement('img');
+            iconelement.src = `https://openweathermap.org/img/wn/${data.list[index].weather[0].icon}@2x.png`;
+            iconelement.style.width = "50px";
+            iconelement.style.height = "50px";
             const weatherdescription = data.list[index].weather[0].description.charAt(0).toUpperCase() + data.list[index].weather[0].description.slice(1);
             descriptionelement.textContent = weatherdescription;
             background(weatherdescription, elementclass);
@@ -48,8 +46,8 @@ function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, 
                 degreeselementmin.style.color = 'orange';
                 degreeselementmax.style.color = 'orange';
             } else {
-                degreeselementmin.style.color = 'lightgreen';
-                degreeselementmax.style.color = 'lightgreen';
+                degreeselementmin.style.color = 'black';
+                degreeselementmax.style.color = 'black';
             }
         })
         .catch(error => console.error('Error fetching weather data:', error));
