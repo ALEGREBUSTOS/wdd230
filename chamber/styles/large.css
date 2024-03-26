@@ -182,7 +182,7 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        padding: 10px 30px;
+        padding: 0px 30px;
     }
     .ctn-weather2 {
         display: flex;
@@ -193,7 +193,7 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        padding: 10px 30px;
+        padding: 0px 30px;
 
     }
     

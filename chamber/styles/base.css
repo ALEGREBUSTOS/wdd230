@@ -1,3 +1,5 @@
+@media screen and (min-width: 0px) and (max-width: 599px) {
+
 :root {
     --font-Montserrat: 'Montserrat', sans-serif;
     --font-Lato: 'Lato', sans-serif;
@@ -238,11 +240,11 @@ main {
     align-items: center;
     width: max-content;
     height: min-content;  
-    margin: 20px;
+    /* margin: 20px; */
     padding: 30px;
     border: black solid 1px;
     border-radius: 35px;
-    text-align: justify;
+    text-align: center;
 }
 .ctn-weather2 {
     display: grid;
@@ -254,9 +256,9 @@ main {
     grid-column: 1;
     justify-items: center;
     align-items: center;
-    width: min-content;
+    width: max-content;
     height: min-content;  
-    margin: 20px;
+    /* margin: 20px; */
     padding: 30px;
     border: black solid 1px;
     border-radius: 35px;
@@ -273,9 +275,9 @@ main {
     grid-column: 1;
     justify-items: center;
     align-items: center;
-    width: min-content;
+    width: max-content;
     height: min-content;  
-    margin: 20px;
+    /* margin: 20px; */
     padding: 30px;
     border: black solid 1px;
     border-radius: 35px;
@@ -289,10 +291,8 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr;
-    gap: 10px;
+    gap: 20px;
     background-color: var(--color-background2);
-
-
 }
 
 .advertisement-box h2 {
@@ -314,10 +314,14 @@ main {
     justify-items: center;
     grid-row: 2;
     grid-column: auto;
-    width: 100%;
+    width: max-content;
+    height: auto;
     justify-items: center;
     align-items: center;
-    padding: 20px 0px 20px 0px;
+    padding: 20px;
+    justify-self: center;
+    background-color: #bc6b2568;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .advertisement-1 picture {
@@ -355,7 +359,12 @@ main {
     width: 100%;
     justify-items: center;
     align-items: center;
-    padding: 20px 0px 20px 0px;
+    width: max-content;
+    height: auto;
+    padding: 20px;
+    justify-self: center;
+    background-color: #bc6b2568;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .advertisement-2 picture {
@@ -832,7 +841,7 @@ p {
 
 .banner {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -841,13 +850,16 @@ p {
     padding: 20px;
     text-align: center;
     z-index: 1000;
-    overflow: auto; 
+    overflow: auto;
+    display: grid; 
+    justify-items: center;
+    align-items: center;
 }
 
 .close-btn {
     position: absolute;
-    top: 450px;
-    left: 50px;
+    top: 350px;
+    left: 450px;
     cursor: pointer;
     color: var(--color-letter1);
     background-color: var(--color-background2);
@@ -857,6 +869,8 @@ p {
 
 .banner picture{
     position: absolute;
-    top: 100px;
-    left: 10px;
+    top: 400px;
+    left: 30px;
+}
+
 }

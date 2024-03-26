@@ -7,7 +7,7 @@ function background(description, elemclass) {
     const background = document.querySelector(elemclass);
     if (background) {
         const descriptioncontent = description.toLowerCase();
-        if (descriptioncontent.includes('cloud') || descriptioncontent.includes('rain') ) {
+        if (descriptioncontent.includes('cloud') || descriptioncontent.includes('rain')) {
             background.style.background = 'linear-gradient(to bottom, rgba(128, 128, 128, 0.6), rgba(138, 43, 226, 0.6), rgba(128, 128, 128, 0.6))';
 
         }
@@ -18,7 +18,7 @@ function background(description, elemclass) {
     }
 }
 
-function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, descriptionselector, iconselector, index, elementclass) {
+function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, descriptionselector, iconselector, index, elementclass, idday) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -28,6 +28,35 @@ function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, 
             const degreeselementmin = document.querySelector(degreesselectormin);
             const descriptionelement = document.querySelector(descriptionselector);
             const iconelement = document.querySelector(iconselector);
+            const titleday = document.querySelector(idday);
+            
+            var today = new Date();
+            var tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            var afterTomorrow = new Date(today);
+            afterTomorrow.setDate(today.getDate() + 2);
+            
+            var options = { day: '2-digit', weekday: 'short' };
+            var formatter = new Intl.DateTimeFormat('en-US', options);
+            
+            if (idday === "#d1") {
+                var todayForecast = formatter.format(today);
+                var [day, number] = todayForecast.split(' ');
+                titleday.textContent = `${day} ${number}`;
+            }
+            if (idday === "#d2") {
+                var tomorrowForecast = formatter.format(tomorrow);
+                var [day, number] = tomorrowForecast.split(' ');
+                titleday.textContent = `${day} ${number}`;
+            }
+            if (idday === "#d3") {
+                var afterTomorrowForecast = formatter.format(afterTomorrow);
+                var [day, number] = afterTomorrowForecast.split(' ');
+                titleday.textContent = `${day} ${number}`;
+            }
+            
+
+
 
             cityelement.textContent = ncity;
             let degree_celsiusmin = (data.list[index].main.temp_min - 273.15).toFixed(0);
@@ -53,6 +82,6 @@ function wtrforecast(url, cityselector, degreesselectormin, degreesselectormax, 
         .catch(error => console.error('Error fetching weather data:', error));
 }
 
-wtrforecast(apiurl, "#city1", "#degreesmin1", "#degreesmax1", "#description1", "#icon1", 5, ".ctn-weather");
-wtrforecast(apiurl, "#city2", "#degreesmin2", "#degreesmax2", "#description2", "#icon2", 9, ".ctn-weather2");
-wtrforecast(apiurl, "#city3", "#degreesmin3", "#degreesmax3", "#description3", "#icon3", 14, ".ctn-weather3");
+wtrforecast(apiurl, "#city1", "#degreesmin1", "#degreesmax1", "#description1", "#icon1", 5, ".ctn-weather", "#d1");
+wtrforecast(apiurl, "#city2", "#degreesmin2", "#degreesmax2", "#description2", "#icon2", 9, ".ctn-weather2", "#d2");
+wtrforecast(apiurl, "#city3", "#degreesmin3", "#degreesmax3", "#description3", "#icon3", 14, ".ctn-weather3", "#d3");
