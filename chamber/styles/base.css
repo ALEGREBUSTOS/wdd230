@@ -1,5 +1,3 @@
-@media screen and (min-width: 0px) and (max-width: 599px) {
-
 :root {
     --font-Montserrat: 'Montserrat', sans-serif;
     --font-Lato: 'Lato', sans-serif;
@@ -28,6 +26,7 @@ header {
     grid-template-columns: 80px 1fr 50px;
     justify-items: center;
     text-align: center;
+    border-bottom: black solid 2px;
 
 }
 
@@ -124,6 +123,7 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 3fr;
+    background-color: var(--color-background2);
 }
 
 .hero-img {
@@ -158,17 +158,23 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .event {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0px 20px 0px;
-    background-color: var(--color-background2);
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     align-items: center;
-    align-content: stretch;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+
 
 }
 
@@ -209,6 +215,10 @@ main {
 
 }
 
+.event, .weatherbox{
+    margin: 15px;
+}
+
 .weatherbox {
     display: grid;
     grid-template-rows: 20px 0.5fr  0.5fr 0.5fr;
@@ -241,7 +251,7 @@ main {
     width: max-content;
     height: min-content;  
     /* margin: 20px; */
-    padding: 30px;
+    padding: 20px;
     border: black solid 1px;
     border-radius: 35px;
     text-align: center;
@@ -287,7 +297,7 @@ main {
 .advertisement-box {
 
     grid-row: 4;
-    padding: 20px 0px 20px 0px;
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr;
@@ -309,16 +319,13 @@ main {
     display: grid;
     grid-template-rows: 180px 30px 30px;
     grid-template-columns: 1fr;
-    align-items: center;
-    align-content: stretch;
-    justify-items: center;
     grid-row: 2;
     grid-column: auto;
-    width: max-content;
+    width: 80%;
     height: auto;
     justify-items: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     justify-self: center;
     background-color: #bc6b2568;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -356,14 +363,13 @@ main {
     grid-template-columns: 1fr;
     grid-row: 3;
     grid-column: auto;
-    width: 100%;
     justify-items: center;
     align-items: center;
-    width: max-content;
+    width: 80%;
     height: auto;
-    padding: 20px;
+    padding: 10px;
     justify-self: center;
-    background-color: #bc6b2568;
+    background-color: #2555bc68;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -399,10 +405,14 @@ main {
     grid-template-columns: 1fr;
     grid-row: 4;
     grid-column: auto;
-    width: 100%;
     justify-items: center;
     align-items: center;
-    padding: 20px 0px 20px 0px;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    justify-self: center;
+    background-color: #ff4d0068;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .advertisement-3 picture {
@@ -841,7 +851,7 @@ p {
 
 .banner {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -873,4 +883,3 @@ p {
     left: 30px;
 }
 
-}

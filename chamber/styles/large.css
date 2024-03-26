@@ -84,13 +84,14 @@
         display: flex;
         flex-direction: row;
         padding: 0px 0px 10px 0px;
+        gap: 10px;
         
 
        
     }
 
-    .event, .weather{
-        padding: 0px;
+    .event, .weatherbox{
+        margin: 15px;
     }
 
 
@@ -165,6 +166,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 20px 0.5fr;
+        gap: 10px;
     
     }
 
@@ -182,7 +184,8 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        padding: 0px 30px;
+        margin-top: 10px;
+        padding: 0px 20px;
     }
     .ctn-weather2 {
         display: flex;
@@ -194,6 +197,7 @@
         align-items: center;
         text-align: center;
         padding: 0px 30px;
+        margin-top: 10px;
 
     }
     
@@ -207,6 +211,7 @@
         align-items: center;
         text-align: center;
         padding: 0px 30px;
+        margin-top: 10px;
     }
     .close-btn {
         position: absolute;

@@ -15,6 +15,10 @@ function background(description, elemclass) {
             background.style.background = "linear-gradient(to bottom, rgba(217, 247, 249, 0.6), rgba(247, 123, 46, 0.6), rgba(217, 247, 249, 0.6))";
 
         }
+        if (descriptioncontent.includes('clear sky')) {
+            background.style.background = "linear-gradient(to bottom, rgba(254, 255, 255, 0.6), rgba(180, 231, 255, 0.6), rgba(89, 176, 252, 0.6))";
+
+        }
     }
 }
 
