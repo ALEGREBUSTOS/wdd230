@@ -71,10 +71,12 @@ modeButton.addEventListener("click", () => {
         }
 
         if (htmlnamee == "discover.html") {
-            const main = document.querySelector("main")
-            const h3titles = document.querySelectorAll("h3")
+            const main = document.querySelector("main");
+            const h3titles = document.querySelectorAll("h3");
+            const visittitle = document.querySelector("#visits");
             main.style.background = "#283618";
             main.style.color = "#FEFAE0";
+            visittitle.style.color = "#FEFAE0";
             h3titles.forEach(function (h3) {
                 h3.style.borderBottomColor = "#FEFAE0";
             });
@@ -150,8 +152,10 @@ modeButton.addEventListener("click", () => {
         if (htmlnamee == "discover.html") {
             const main = document.querySelector("main")
             const h3titles = document.querySelectorAll("h3")
+            const visittitle = document.querySelector("#visits");
             main.style.background = "#FEFAE0";
             main.style.color = "#283618";
+            visittitle.style.color = "#283618";
             h3titles.forEach(function (h3) {
                 h3.style.borderBottomColor = "#283618";
             })
@@ -199,5 +203,6 @@ function showBannerOnDays() {
     }
 }
 
-
+if (htmlnamee == "index.html") {
 showBannerOnDays();
+}
