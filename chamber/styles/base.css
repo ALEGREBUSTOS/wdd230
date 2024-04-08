@@ -329,7 +329,12 @@ main {
     justify-self: center;
     background-color: #bc6b2568;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: width 1s;
 }
+
+.advertisement-1:hover {
+    width: 95%;
+  }
 
 .advertisement-1 picture {
     display: grid;
@@ -337,10 +342,11 @@ main {
 
 .advertisement-1 img {
     grid-row: 1;
-    width: 100%;
+    width: 50%;
     height: auto;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .advertisement-1 h4 {
@@ -371,8 +377,11 @@ main {
     justify-self: center;
     background-color: #2555bc68;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: width 1s;
 }
-
+.advertisement-2:hover {
+    width: 95%;
+  }
 .advertisement-2 picture {
     display: grid;
 }
@@ -413,8 +422,11 @@ main {
     justify-self: center;
     background-color: #ff4d0068;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: width 1s;
 }
-
+.advertisement-3:hover {
+    width: 95%;
+  }
 .advertisement-3 picture {
     display: grid;
 }
