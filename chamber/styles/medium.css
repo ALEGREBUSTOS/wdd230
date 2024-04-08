@@ -1,13 +1,14 @@
 @media screen and (min-width: 600px) and (max-width: 900px) {
 
-    .hero-img{
+    .hero-img {
 
         max-width: 100%;
         max-height: 900px;
         width: 100%;
         height: auto;
-    
+
     }
+
     .advertisement-1 img {
 
         width: 50%;
@@ -27,24 +28,25 @@
     }
 
     #menu {
-        position:absolute;
+        position: absolute;
         left: 50rem;
-    
+
     }
 
     .weatherbox {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 20px 0.5fr;
-    
+
     }
 
-    .weatherbox h3{
+    .weatherbox h3 {
         display: grid;
         grid-row: 1;
         grid-column: 1/4;
 
     }
+
     .ctn-weather {
         grid-row: 2;
         grid-column: 1;
@@ -55,6 +57,7 @@
         text-align: center;
         gap: 10px;
     }
+
     .ctn-weather2 {
         display: flex;
         flex-wrap: wrap;
@@ -65,7 +68,7 @@
         gap: 10px;
 
     }
-    
+
     .ctn-weather3 {
         display: flex;
         flex-wrap: wrap;
@@ -80,19 +83,55 @@
 
 
 
-.close-btn {
-    position: absolute;
-    top: 340px;
-    left: 650px;
+    .close-btn {
+        position: absolute;
+        top: 340px;
+        left: 650px;
 
-}
+    }
 
-.banner picture{
-    position: absolute;
-    top: 400px;
-    left: 200px;
-}
+    .banner picture {
+        position: absolute;
+        top: 400px;
+        left: 200px;
+    }
+
+    .mercado>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+    
+    .mercado>picture:hover {
+        padding: 20px; 
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        position: relative; 
+    }
+
+    .peatonal>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+    
+    .peatonal>picture:hover {
+        padding: 20px; 
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        position: relative; 
+    }
+
+    .puerto>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+    
+    .puerto>picture:hover {
+        padding: 20px; 
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        position: relative; 
+    }
 
     
-}
 
+}

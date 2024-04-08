@@ -229,4 +229,41 @@
         left: 500px;
     }
     
+    .mercado>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+    
+    .mercado>picture:hover {
+        padding: 20px; 
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        position: relative; 
+    }
+
+    .peatonal>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+    
+    .peatonal>picture:hover {
+        padding: 20px; 
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        position: relative; 
+    }
+
+    .puerto>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+    
+    .puerto>picture:hover {
+        padding: 20px; 
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        position: relative; 
+    }
+
+
 }
