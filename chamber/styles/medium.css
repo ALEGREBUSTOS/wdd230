@@ -132,6 +132,10 @@
         position: relative; 
     }
 
-    
+    #boxbenefits{
+
+        max-width:fit-content;
+        max-height: fit-content;
+    }
 
 }
