@@ -25,8 +25,19 @@
 
     .wf1{
         padding: 10px 0px;
-        grid-column: 2/4;
+        grid-column: 2/3;
 
+    }
+
+    #boxbenefits{
+
+        grid-column: 3/4;
+        grid-row: auto;
+        position: absolute;
+        top: 130px;
+        left: 850px;
+        max-width:fit-content;
+        max-height: fit-content;
     }
 
     .wf1 legend {
@@ -52,6 +63,7 @@
         justify-self: center;
     
     }
+
 
     #mode {
         position: absolute;

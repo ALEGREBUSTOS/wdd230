@@ -640,6 +640,8 @@ p {
 
 /* FORM CSS */
 
+
+
 .wf1 {
     display: grid;
     grid-row: 3;
@@ -758,7 +760,7 @@ p {
 #bmem,
 #smem,
 #gmem {
-    display: none;
+    display: grid;
     grid-column: 1;
     width: 100%;
     height: auto;
