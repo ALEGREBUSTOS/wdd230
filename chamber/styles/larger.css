@@ -276,6 +276,74 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
         position: relative; 
     }
+    .discover-main {
 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px .5fr .5fr .5fr;
+
+    }
+
+    #visits {
+        grid-row: 1/2;
+        grid-column: 1/3;
+
+    }
+
+    .nextevents {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+    .statistics {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+    .benefits {
+        display: grid;
+        grid-row: 4/5;
+        grid-column: 1/2;
+        justify-items: center;
+        align-content: center;
+
+
+    }
+
+    .mercado {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+    .peatonal {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+    .puerto {
+        display: grid;
+        grid-row: 4/5;
+        grid-column: 2/3;
+        justify-items: center;
+        align-content: center;
+
+
+    }
 
 }
