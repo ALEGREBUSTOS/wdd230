@@ -1,4 +1,4 @@
-const giturl = "https://alegrebustos.github.io/wdd230/chamber/data/membership.json";
+const giturl = "https://alegrebustos.github.io/wdd230/chamber/data/members.json";
 const htmlnam = document.URL.substring(document.URL.lastIndexOf("/") + 1);
 
 async function getdata() {
