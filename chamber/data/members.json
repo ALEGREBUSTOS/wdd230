@@ -6,7 +6,7 @@
             "phone": "555-1234",
             "website": "www.techinnovators.com",
             "image": "images/tinnov.webp",
-            "membership_level": "Premium",
+            "membership_level": "NP",
             "additional_info": "Leaders in cutting-edge technology solutions."
         },
         {
@@ -15,7 +15,7 @@
             "phone": "555-5678",
             "website": "www.globexcorp.com",
             "image": "images/globcorp.webp",
-            "membership_level": "Elite",
+            "membership_level": "Bronze",
             "additional_info": "Providing global business services and innovations."
         },
         {
@@ -24,7 +24,7 @@
             "phone": "555-9876",
             "website": "www.sustainablelivingco.com",
             "image": "images/sustainliving.webp",
-            "membership_level": "Platinum",
+            "membership_level": "Silver",
             "additional_info": "Championing eco-friendly living solutions worldwide."
         },
         {
