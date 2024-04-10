@@ -768,7 +768,9 @@ p {
     background: transparent;
     justify-self: center;
 }
-
+#boxbenefits{
+    background-color: transparent;
+}
 
 /*  */
 /*  */
