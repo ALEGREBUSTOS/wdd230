@@ -53,12 +53,20 @@ modeButton.addEventListener("click", () => {
             const mform = document.querySelector(".wf1");
             const legend = document.querySelector(".wf1 legend");
             const boxbenefit = document.querySelector("#boxbenefits");
+            const bnpmem = document.querySelector("#bnpmem");
+            const bmem = document.querySelector("#bmem");
+            const smem = document.querySelector("#smem");
+            const gmem = document.querySelector("#gmem");
             mform.style.background = "#283618";
             mform.style.color = "#FEFAE0";
             legend.style.background = "#283618";
             legend.style.color = "#FEFAE0";
             boxbenefit.style.background = "#283618";
-            boxbenefit.style.color = "#FEFAE0";
+            bnpmem.style.color = "#FEFAE0";
+            bmem.style.color = "#FEFAE0";
+            smem.style.color = "#FEFAE0";
+            gmem.style.color = "#FEFAE0";
+
         }
 
         if (htmlnamee == "thanks.html") {
@@ -137,12 +145,20 @@ modeButton.addEventListener("click", () => {
             const mform = document.querySelector(".wf1");
             const legend = document.querySelector(".wf1 legend");
             const boxbenefit = document.querySelector("#boxbenefits");
+            const bnpmem = document.querySelector("#bnpmem");
+            const bmem = document.querySelector("#bmem");
+            const smem = document.querySelector("#smem");
+            const gmem = document.querySelector("#gmem");
             mform.style.background = "#FEFAE0";
             mform.style.color = "#283618";
             legend.style.background = "#FEFAE0";
             legend.style.color = "#283618";
             boxbenefit.style.background = "#FEFAE0";
-            boxbenefit.style.color = "#283618";
+            bnpmem.style.color = "#283618";
+            bmem.style.color = "#283618";
+            smem.style.color = "#283618";
+            gmem.style.color = "#283618";
+    
         }
         if (htmlnamee == "thanks.html") {
             const tmain = document.querySelector(".thkmain");
