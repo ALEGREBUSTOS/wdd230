@@ -765,7 +765,7 @@ p {
     width: 100%;
     height: auto;
     color: var(--color-letter2);
-    background: var(--color-background2);
+    background: transparent;
     justify-self: center;
 }
 
