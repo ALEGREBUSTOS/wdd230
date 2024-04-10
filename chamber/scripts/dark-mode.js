@@ -52,10 +52,13 @@ modeButton.addEventListener("click", () => {
         if (htmlnamee == "join.html") {
             const mform = document.querySelector(".wf1");
             const legend = document.querySelector(".wf1 legend");
+            const boxbenefit = document.querySelector("#boxbenefits");
             mform.style.background = "#283618";
             mform.style.color = "#FEFAE0";
             legend.style.background = "#283618";
             legend.style.color = "#FEFAE0";
+            boxbenefit.style.background = "#283618";
+            boxbenefit.style.color = "#FEFAE0";
         }
 
         if (htmlnamee == "thanks.html") {
@@ -133,10 +136,13 @@ modeButton.addEventListener("click", () => {
         if (htmlnamee == "join.html") {
             const mform = document.querySelector(".wf1");
             const legend = document.querySelector(".wf1 legend");
+            const boxbenefit = document.querySelector("#boxbenefits");
             mform.style.background = "#FEFAE0";
             mform.style.color = "#283618";
             legend.style.background = "#FEFAE0";
             legend.style.color = "#283618";
+            boxbenefit.style.background = "#FEFAE0";
+            boxbenefit.style.color = "#283618";
         }
         if (htmlnamee == "thanks.html") {
             const tmain = document.querySelector(".thkmain");
