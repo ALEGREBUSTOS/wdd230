@@ -7,8 +7,7 @@
     <meta name="author" content="Alejo Alegre Bustos">
     <meta property="og:title" content="Cozumel Scoots - WDD 230 FINAL PROJECT">
     <meta property="og:type" content="article">
-    <meta property="og:image"
-        content="https://upload.wikimedia.org/wikipedia/commons/b/b2/Cruise_Port_San_Miguel.jpg">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b2/Cruise_Port_San_Miguel.jpg">
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="315">
     <meta property="og:url" content="https://alegrebustos.github.io/chamber/discover/discover.html">
@@ -56,31 +55,55 @@
     </header>
 
 
-    <main id="direc-main">
-        <div id="contact-form">
-            <h2>Send us a message</h2>
-            <form action="process_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-        
-                <button type="submit">Send</button>
-            </form>
+    <main id="contactmain">
+        <div id="error-message" class="error-message" style="display: none;">Please, complete all the required fields.
         </div>
-        
+        <div class="loc1">
+            <h2>Come to meet us in any of our locations!</h2>
+            <h4>San Miguel de Cozumel</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59789.727093816175!2d-87.02020978594254!3d20.512048902256193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1713300957127!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="loc2">
+            <h4>El Cedral</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.3809286584383!2d-86.99632251446666!3d20.367177932445543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e536581da2ff5%3A0x19e1333e2038a54b!2s77687%20El%20Cedral%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1713301095423!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form action="thanksyou.html" method="get" class="wf1">
+            <fieldset>
+                <legend>Contact us</legend>
+                <label>First name*<input id="fname" type="text" name="fname" required autofocus></label>
+                <label>Last name*<input id="lname" type="text" name="lname" required></label>
+                <label>Email*<input id="email" type="email" name="email" placeholder="✉️ someone@mail.com"
+                        required></label>
+                <label>Phone<input id="phone" type="tel" name="phone" placeholder="☏ 2084795223" required></label>
+                <label>Comments
+                    <textarea name="comments" id="comments"
+                        placeholder="✍️ Write your comments or special accommodations such as the need and location of a drop-off request..."></textarea>
+                </label>
+            </fieldset>
+            <input id="btnsubmit" type="submit" value="Send my inquery">
+        </form>
+        <div class="contactinfo">
+            <h2>Contact information</h4>
+       
+            <address>Av. Blas parera and Av. Bernardo de Yrigoyen, San Miguel de Cozumel</address>
+            <a href="mailto:CS@gmail.com">CSsm@gmail.com</a>
+            <p>Tel.: +52 3245678907</p>
+
+            <address>Av. Capputto and Bv. Pellegrini, El Cedral</address>
+            <a href="mailto:CS@gmail.com">CSec@gmail.com</a>
+            <p>Tel.: +52 3241278564</p>
+        </div>
 
 
     </main>
     <footer>
         <div>
-            <h2>Contact Us</h2>
-            <address>Av. Capputto and Bv. Pellegrini</address>
-            <a href="mailto:CS@gmail.com">CS@gmail.com</a>
             <h4>WDD 230 - Cozumel Scoots PROJECT</h4>
         </div>
         <p class="current-year" id="current-year">.</p>

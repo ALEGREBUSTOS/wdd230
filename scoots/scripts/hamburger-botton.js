@@ -25,7 +25,7 @@ hbgButton.addEventListener('click', () => {
 
 // }
 
-if (htmlname == "reservation.html") {
+if (htmlname == "reservation.html" || htmlname == "contact.html") {
     const bttnsubmit = document.querySelector("#btnsubmit");
     const form = document.querySelector(".wf1");
 

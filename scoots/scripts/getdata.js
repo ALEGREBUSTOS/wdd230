@@ -4,7 +4,7 @@ const htmlnam = document.URL.substring(document.URL.lastIndexOf("/") + 1);
 async function getdata() {
     const response = await fetch(giturl);
     const data = await response.json();
-    generateTableRows(data.rentals);
+    generateTableRows(data);
 }
 
 function generateTableRows(jsondata) {
