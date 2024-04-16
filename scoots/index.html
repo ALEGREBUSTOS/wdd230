@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejo Alegre Bustos">
+    <meta property="og:title" content="Cozumel Scoots - WDD 230 FINAL PROJECT">
+    <meta property="og:type" content="article">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/b/b2/Cruise_Port_San_Miguel.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:url" content="https://alegrebustos.github.io/chamber/discover/discover.html">
+    <meta property="article:modified_time" content="2024-02-23T07:12:30Z">
+    <meta name="description"
+        content="This is my final  project. You will find all the implementatios in which I worked during this semester.">
+    <title> Cozumel Scoots</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="maxtemp">
+        <span class="close-btn" onclick="closeBanner()">×</span>
+        
+    </div>
+    <header>
+
+        <h1>Cozumel Scoots</h1>
+
+        <button id="menu"></button>
+        <div id="mode">🌑</div>
+        <nav class="nav-bar">
+            <a rel="preload" href="index.html">Home</a>
+            <a rel="preload" href="rentals.html">Rentals</a>
+            <a rel="preload" href="reservation.html">Reservation</a>
+            <a rel="preload" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <video class="hero-img" autoplay muted playsinline loop>
+            <source src="images/cozumel.webm" type="video/webm">
+        </video>
+
+        <button class="bttn-joinus" onclick="redirect()">My reservation</button>
+        <a href="https://www.instagram.com/cozumelscoots/">
+            <picture>
+                <source srcset='images/instagram.png' media='(min-width: 900px)'>
+                <source srcset='images/instagram.png' media='(min-width: 500px) and (max-width: 900px)'>
+                <img class="instagram" src='images/instagram.png' alt='instagram-logo' width='50' height='50' loading="eager">
+            </picture>
+        </a>
+        
+
+        <div class="event-weather-box">
+
+            <section class="event">
+                <div class="tor">
+                    <h2>Types of Rentals</h2>
+                    <div class="honda">
+                        <h4>Honda Motor Scooters</h4>
+
+                        <p>Honda Metropolitan (49cc) - 1 person</p>
+                        <p>Honda Dio (110cc) - 2 person</p>
+                        <p>Honda PCX150 (149cc) - 2 person</p>
+
+                    </div>
+                    <div class="sbs">
+                        <h4>Side-by-Side ATVs</h4>
+
+                        <p>Honda Pioneer 1000 - 4 person</p>
+
+                    </div>
+                    <div class="jeeps">
+                        <h4>Jeeps</h4>
+
+                        <p>Jeep Wrangler - 4 door manual with A/C - 5 person</p>
+                        <p>Jeep Wrangler - 2 door - open air - manual - 4 person</p>
+
+                    </div>
+                </div>
+
+                <div class="rsa">
+                    <h2>Rental Services and Agreements</h2>
+                    <p>A $50 security deposit is required to confirm reservations.</p>
+                    <p>A valid driver's license is required in hand at the time of rental.</p>
+                    <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                    <p>Fuel charge is not included.</p>
+                    <p>Unlimited mileage.</p>
+                    <p>Liability insurance is included.</p>
+                    <p>Damage insurance is available for purchase.</p>
+                    <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                    <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</p>
+                    <p>Rentals may be returned to either physical location.</p>
+                </div>
+            </section>
+
+            <div class="weatherbox">
+                <h3 class="text">Weather🌞</h3>
+                <div class="ctn-weather">
+                    <h3 class="text" id="d1">.</h3>
+                    <p class="text" id="city1">.</p>
+                    <p class="text" id="degreesmin1">.</p>
+                    <p class="text" id="degreesmax1">.</p>
+                    <p class="text" id="humedtity1">.</p>
+                    <p class="text" id="description1">.</p>
+                    <img src="#" id="icon1" alt="weather-icon" loading="lazy">
+                </div>
+                <div class="ctn-weather2">
+                    <h3 class="text" id="d2">.</h3>
+                    <p class="text" id="city2">.</p>
+                    <p class="text" id="degreesmin2">.</p>
+                    <p class="text" id="degreesmax2">.</p>
+                    <p class="text" id="humedtity2">.</p>
+                    <p class="text" id="description2">.</p>
+                    <img src="#" id="icon2" alt="weather-icon" loading="lazy">
+                </div>
+                <div class="ctn-weather3">
+                    <h3 class="text" id="d3">.</h3>
+                    <p class="text" id="city3">.</p>
+                    <p class="text" id="degreesmin3">.</p>
+                    <p class="text" id="degreesmax3">.</p>
+                    <p class="text" id="humedtity3">.</p>
+                    <p class="text" id="description3">.</p>
+                    <img src="#" id="icon3" alt="weather-icon" loading="lazy">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="advertisement-box">
+            <h2>Models Spotlights</h2>
+            <div class="advertisement-1">
+                <picture>
+                    <source class="s1" srcset='images/jeep-larger.webp' media="(min-width:900px)">
+                    <source class="s12" srcset='images/jeep-medium.webp' media="(min-width:500px) and (max-width:900px)">
+                    <img class="img1" src="images/jeep-small.webp" alt="small-img" width="399" height="250" loading="lazy">
+                </picture>
+                <h4>Jeep Wrangler</h4>
+            </div>
+
+            <div class="advertisement-2">
+                <picture>
+                    <source class="s2" srcset='images/honda-metropolitan-larger.webp' media="(min-width:900px)">
+                    <source class="s22" srcset='images/honda-metropolitan-medium.webp' media="(min-width:500px) and (max-width:900px)">
+                    <img class="img2" src="images/honda-metropolitan-small.webp" alt="small-img" width="399" height="250" loading="lazy">
+                </picture>
+                <h4>Honda Metropolitan</h4>
+            </div>
+
+            <div class="advertisement-3">
+                <picture>
+                    <source class="s3" srcset='images/honda-pioneer-larger.webp' media="(min-width:900px)">
+                    <source class="s32" srcset='images/honda-pioneer-medium.webp' media="(min-width:500px) and (max-width:900px)">
+                    <img class="img3" src="images/honda-pioneer-small.webp" alt="small-img" width="399" height="250" loading="lazy">
+                </picture>
+                <h4>Honda Pioneer</h4>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <h2>Contact Us</h2>
+            <address>Av. Capputto and Bv. Pellegrini</address>
+            <a href="mailto:CS@gmail.com">CS@gmail.com</a>
+            <h4>WDD 230 - Cozumel Scoots PROJECT</h4>
+        </div>
+        <p class="current-year" id="current-year">.</p>
+        <p id="lastModified">.</p>
+    </footer>
+    <script src="scripts/hamburger-botton.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdata.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/currentweather.js"></script>
+</body>
+
+</html>

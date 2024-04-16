@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejo Alegre Bustos">
+    <meta property="og:title" content="Cozumel Scoots - WDD 230 FINAL PROJECT">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b2/Cruise_Port_San_Miguel.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:url" content="https://alegrebustos.github.io/chamber/discover/discover.html">
+    <meta property="article:modified_time" content="2024-02-23T07:12:30Z">
+    <meta name="description"
+        content="This is my final  project. You will find all the implementatios in which I worked during this semester.">
+    <title> Cozumel Scoots</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <h1>Cozumel Scoots</h1>
+
+        <button id="menu"></button>
+        <div id="mode">🌑</div>
+        <nav class="nav-bar">
+            <a rel="preload" href="index.html">Home</a>
+            <a rel="preload" href="rentals.html">Rentals</a>
+            <a rel="preload" href="reservation.html">Reservation</a>
+            <a rel="preload" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="jmain">
+        <div id="error-message" class="error-message" style="display: none;">Please, complete all the required fields.</div>
+        <form action="thanksyou.html" method="get" class="wf1">
+            <div id="boxbenefits">
+                <h2>Rental Services and Agreements</h2>
+                <p>A $50 security deposit is required to confirm reservations.</p>
+                <p>A valid driver's license is required in hand at the time of rental.</p>
+                <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                <p>Fuel charge is not included.</p>
+                <p>Unlimited mileage.</p>
+                <p>Liability insurance is included.</p>
+                <p>Damage insurance is available for purchase.</p>
+                <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</p>
+                <p>Rentals may be returned to either physical location.</p>
+            </div>
+            <fieldset>
+                <legend>New reservation</legend>
+                <label>First name*<input id="fname" type="text" name="fname" required autofocus></label>
+                <label>Last name*<input id="lname" type="text" name="lname" required></label>
+                <label>City*<input id="cname" type="text" name="cname" placeholder="California" required></label>
+                <label>Country*<input id="countryname" type="text" name="countryname" placeholder="Canada"
+                        required></label>
+                <label>Email*<input id="email" type="email" name="email" placeholder="✉️ someone@mail.com"
+                        required></label>
+                <label>Phone<input id="phone" type="tel" name="phone" placeholder="☏ 2084795223" required></label>
+                <label for="cruise-line">Choose a cruise line:</label>
+                <select id="cruise-line" name="cruise-line">
+                    <option value="">▾ Please Select ▾</option>
+                    <optgroup label="Popular Cruise Lines">
+                        <option value="royal-caribbean">Royal Caribbean International</option>
+                        <option value="carnival">Carnival Cruise Line</option>
+                        <option value="norwegian">Norwegian Cruise Line</option>
+                    </optgroup>
+                    <optgroup label="Luxury Cruise Lines">
+                        <option value="seabourn">Seabourn Cruise Line</option>
+                        <option value="regent-seven-seas">Regent Seven Seas Cruises</option>
+                        <option value="crystal">Crystal Cruises</option>
+                    </optgroup>
+                    <optgroup label="River Cruise Lines">
+                        <option value="viking">Viking River Cruises</option>
+                        <option value="uniworld">Uniworld Boutique River Cruise Collection</option>
+                        <option value="avalon">Avalon Waterways</option>
+                    </optgroup>
+                </select>
+                <label>Initial rental date <input id="initialrenatldate" type="date" name="initialrenatldate"
+                        required></label>
+                <label>Ending rental date <input id="Endingrenatldate" type="date" name="Endingrenatldate"
+                        required></label>
+                <label for="vehicle">Rental type</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="">▾ Please Select ▾</option>
+                    <optgroup label="Honda Scooters">
+                        <option value="honda-metropolitan">Honda Metropolitan Scooter</option>
+                        <option value="honda-dio">Honda Dio Scooter</option>
+                        <option value="honda-pcx150">Honda PCX150 Scooter</option>
+                    </optgroup>
+                    <optgroup label="Other Vehicles">
+                        <option value="honda-pioneer">Honda Pioneer ATV</option>
+                        <option value="jeep-wrangler-4-door">Jeep Wrangler - 4 door with A/C</option>
+                        <option value="jeep-wrangler-2-door">Jeep Wrangler - 2 door</option>
+                    </optgroup>
+                </select>
+                <label>How many vehicles? <input type="number" name="numberofvehicules" required></label>
+
+
+                    <label>Comments
+                    <textarea name="comments" id="comments"
+                        placeholder="✍️ Write your comments or special accommodations such as the need and location of a drop-off request..."></textarea>
+                    </label>
+                    <input type="hidden" name="timerecord" id="timerecord">
+
+            </fieldset>
+
+            <input id="btnsubmit" type="submit" value="Reserve my vehicle">
+
+        </form>
+
+    </main>
+    <footer>
+        <div>
+            <h2>Contact Us</h2>
+            <address>Av. Capputto and Bv. Pellegrini</address>
+            <a href="mailto:CS@gmail.com">CS@gmail.com</a>
+            <h4>WDD 230 - Cozumel Scoots PROJECT</h4>
+        </div>
+        <p class="current-year" id="current-year">.</p>
+        <p id="lastModified">.</p>
+    </footer>
+    <script src="scripts/hamburger-botton.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+@media screen and (min-width: 900px) {
+    body {
+
+        background-color: var(--color-background2);
+    }
+
+    .hero-img {
+
+        grid-row: 2;
+        max-width: 100%;
+        max-height: 1200px;
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 20px 0px;
+
+    }
+
+    .bttn-joinus {
+
+        top: 800px;
+        left: 450px;
+        max-width: 600px;
+        width: 100%;
+        height: 10%;
+    }
+
+    .maxtemp {
+
+        height: 13.5%;
+        text-align: center;
+        font-size: xx-large;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        cursor: pointer;
+        color: var(--color-letter1);
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .instagram {
+
+        top: 45px;
+
+
+    }
+
+    .jmain {
+
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr .5fr;
+        grid-template-rows: 50px 1fr;
+        justify-items: center;
+
+    }
+
+    .wf1 {
+        padding: 10px 0px;
+        grid-row: 2/3;
+        grid-column: 2/3;
+
+    }
+
+    #boxbenefits {
+
+        grid-column: 3/4;
+        grid-row: 2/3;
+        position: absolute;
+        top: 180px;
+        left: 850px;
+        font-size: large;
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+
+    .wf1 legend {
+
+        padding: .5rem;
+
+    }
+
+    .wf1 fieldset {
+        display: grid;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        /* padding: 3% 13%; */
+        max-width: 100%;
+        max-height: 100%;
+        justify-self: center;
+
+    }
+
+    .wf1 input[type="submit"] {
+
+        padding: .8rem;
+        justify-self: center;
+
+    }
+
+    .error-message {
+        grid-row: 1/2;
+        grid-column: 1/7;
+        justify-self: center;
+    }
+
+    #mode {
+        position: absolute;
+        top: 3rem;
+        left: 82rem;
+
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .nav-bar {
+        flex-direction: row;
+    }
+
+    .nav-bar a {
+        display: block;
+        flex: 1 1 100%;
+
+    }
+
+    .nav-bar a:hover {
+        transition: 0.5s;
+        background-color: var(--color-background1);
+        color: var(--color-background2);
+    }
+
+
+    .event-weather-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 10px 0px;
+        gap: 10px;
+
+
+
+    }
+
+    .event {
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+
+    .event,
+    .weatherbox {
+        margin: 15px;
+    }
+
+
+    .advertisement-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border: 5px solid var(--color-letter1);
+
+    }
+
+    .advertisement-box h1 {
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+        align-self: center;
+    }
+
+    .advertisement-1 {
+        grid-row: 1;
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: 180px 30px 30px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        align-content: stretch;
+        justify-items: center;
+        padding: 0px;
+    }
+
+    .advertisement-2 {
+        grid-row: 1;
+        grid-column: 3;
+        grid-template-rows: 180px 30px 30px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        align-content: stretch;
+        justify-items: center;
+        padding: 0px;
+    }
+
+    .advertisement-3 {
+        grid-row: 1;
+        grid-column: 4;
+        grid-template-rows: 180px 30px 30px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        align-content: stretch;
+        justify-items: center;
+        padding: 0px;
+    }
+
+    .advertisement-1 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-2 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-3 img {
+
+        width: 50%;
+
+    }
+
+    .weatherbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20px 0.5fr;
+        gap: 10px;
+
+    }
+
+    .weatherbox h3 {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    .ctn-weather {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-row: 2;
+        grid-column: 1;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0px 20px;
+    }
+
+    .ctn-weather2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-row: 2;
+        grid-column: 2;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 30px;
+        margin-top: 10px;
+
+    }
+
+    .ctn-weather3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-row: 2;
+        grid-column: 3;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 30px;
+        margin-top: 10px;
+    }
+
+    .mercado>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+
+    .mercado>picture:hover {
+        padding: 20px;
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .peatonal>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+
+    .peatonal>picture:hover {
+        padding: 20px;
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .puerto>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+
+    .puerto>picture:hover {
+        padding: 20px;
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .discover-main {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px .5fr .5fr .5fr;
+
+    }
+
+    #visits {
+        grid-row: 1/2;
+        grid-column: auto;
+
+    }
+
+    .pricingtable {
+        display: grid;
+        grid-row: 2/4;
+        grid-column: auto;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .mercado {
+        display: flex;
+        flex-direction: row;
+        grid-row: 4/5;
+        grid-column: auto;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+
+}

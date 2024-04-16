@@ -1,0 +1,143 @@
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .advertisement-1 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-2 img {
+
+        width: 50%;
+
+    }
+
+    .advertisement-3 img {
+
+        width: 50%;
+
+    }
+
+    #menu {
+        position: absolute;
+        left: 50rem;
+
+    }
+
+    .weatherbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20px 0.5fr;
+
+    }
+
+    .weatherbox h3 {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1/4;
+
+    }
+
+    .ctn-weather {
+        grid-row: 2;
+        grid-column: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 10px 30px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .ctn-weather2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-row: 2;
+        grid-column: 2;
+        padding: 10px 30px;
+        gap: 10px;
+
+    }
+
+    .ctn-weather3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-row: 2;
+        grid-column: 3;
+        padding: 0px 30px;
+        gap: 10px;
+    }
+
+    /* BANNER */
+
+
+    .bttn-joinus {
+        top: 450px;
+        left: 180px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+
+    }
+
+
+
+    .discover-main {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10px .5fr .5fr .5fr 100px;
+        gap: 0px;
+    }
+
+    #visits {
+        grid-row: 1/2;
+        grid-column: auto;
+
+    }
+
+    .pricingtable {
+        display: grid;
+        grid-row: 2/4;
+        grid-column: auto;
+        justify-items: center;
+        align-content: center;
+
+
+    }
+
+    .mercado {
+        display: grid;
+        grid-row: 4/5;
+        grid-column: auto;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+
+
+    .mercado>picture {
+        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
+    }
+
+    .mercado>picture:hover {
+        padding: 20px;
+        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
+        border: 10px solid #8B4513;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    #boxbenefits {
+
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+
+}
