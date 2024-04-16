@@ -141,6 +141,16 @@
                     "title": "OpenWeatherMap.org API Test"
                 }
             ]
+        },
+        {
+            "lesson": "14",
+            "week": "week14",
+            "links": [
+                {
+                    "url": "scoots/index.html",
+                    "title": "Final Project"
+                }
+            ]
         }
     ]
 }
