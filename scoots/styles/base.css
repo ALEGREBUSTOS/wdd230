@@ -791,82 +791,60 @@ p {
 /*  */
 /*  */
 /*  */
-/* DIRECTORY STYLES */
+/* CONTAC STYLES */
 
-#direc-main {
+#contactmain {
 
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
     justify-items: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     background-color: var(--color-background2);
-    padding: 30px;
-
+    
 }
 
-.cardm {
-
-    padding: 10px;
+.contactinfo {
 
 
+    display: grid;
+    grid-row: 1/2;
+    grid-column: auto;
+    padding: 20px;
+    font-family: var(--font-Archivo-Narrow);
+    color: var(--color-letter2);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
 }
 
-.cardm h3 {
-    font-size: xx-large;
-    text-decoration: none;
-}
-
-.bttn-box {
-
+.loc1 {
+    grid-row: 2/3;
+    grid-column: auto;
     display: flex;
-    justify-items: center;
-    border-bottom: var(--color-letter2) 3px solid;
-    width: max-content;
-    height: auto;
-
+    flex-direction: column;
+    padding: 20px;
+    color: var(--color-letter2);
+    font-family: var(--font-Archivo-Narrow);
 }
 
-#hbl {
-
-    border: none;
-    max-width: 30px;
-    max-height: 30px;
-    text-align: center;
-    position: absolute;
-    top: 120px;
-    left: 250px;
-    justify-self: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: var(--color-background2);
-    background-color: var(--color-letter2);
-    font-weight: bolder;
+.loc2 {
+    grid-row: 3/4;
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--color-letter2);
+    font-family: var(--font-Archivo-Narrow);
 }
 
-#vbl:hover,
-#hbl:hover {
-
-    cursor: pointer;
-
-
-}
-
-#vbl {
-
-    color: var(--color-background2);
-    background-color: var(--color-letter2);
-    border: none;
-    max-width: 25px;
-    max-height: 25px;
-    text-align: center;
-    position: absolute;
-    top: 120px;
-    left: 220px;
-    justify-self: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
+#wf1 {
+    grid-row: 4/5;
+    grid-column: auto;
+    padding: 20px;
+    background-color: transparent;
+    color:var(--color-letter2);
 }
 
 /*  */

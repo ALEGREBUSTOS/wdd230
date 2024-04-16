@@ -4,18 +4,18 @@ const htmlnam = document.URL.substring(document.URL.lastIndexOf("/") + 1);
 async function getdata() {
     const response = await fetch(giturl);
     const data = await response.json();
-    generateTableRows(data);
+    generatetablerows(data);
 }
 
-function generateTableRows(jsondata) {
-    var tableBody = document.querySelector(".bodytable");
+function generatetablerows(jsondata) {
+    var tablebody = document.querySelector(".bodytable");
 
-    jsondata.rentals.forEach(function() {
+    jsondata.rentals.forEach(function(rental) {
         var row = document.createElement("tr");
 
-        var rentaltypeCell = document.createElement("td");
-        rentaltypeCell.textContent = rental.vehicle;
-        row.appendChild(rentaltypeCell);
+        var rentaltypecell = document.createElement("td");
+        rentaltypecell.textContent = rental.vehicle;
+        row.appendChild(rentaltypecell);
 
         var maxpersonscell = document.createElement("td");
         maxpersonscell.textContent = rental.max_persons;
@@ -37,12 +37,10 @@ function generateTableRows(jsondata) {
         fullday6hrscell.textContent = rental.full_day_price_6_hrs;
         row.appendChild(fullday6hrscell);
 
-    
-        tableBody.appendChild(row);
+        tablebody.appendChild(row);
     });
 }
 
-
 if (htmlnam == "rentals.html") {
-    getdata();}
-
+    getdata();
+}

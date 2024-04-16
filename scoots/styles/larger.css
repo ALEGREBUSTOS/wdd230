@@ -295,37 +295,6 @@
         position: relative;
     }
 
-    .peatonal>picture {
-        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
-    }
-
-    .peatonal>picture:hover {
-        padding: 20px;
-        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
-        border: 10px solid #8B4513;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        position: relative;
-    }
-
-    .puerto>picture {
-        transition: padding 1s, border 1s, box-shadow 1s, background 1s;
-    }
-
-    .puerto>picture:hover {
-        padding: 20px;
-        background: linear-gradient(135deg, #8B4513 0%, #8B4513 50%, #D2691E 50%, #D2691E 100%);
-        border: 10px solid #8B4513;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        position: relative;
-    }
-
-    .discover-main {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px .5fr .5fr .5fr;
-
-    }
 
     #visits {
         grid-row: 1/2;
@@ -349,6 +318,37 @@
         justify-items: center;
         align-content: center;
 
+    }
+
+    #contactmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .contactinfo {
+ 
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    #wf1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+    }
+
+    .loc1 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .loc2 {
+        grid-row: 2/3;
+        grid-column: 2/3;
     }
 
 
